@@ -2,7 +2,7 @@
 
 ## Direction
 
-**Studio obsidienne — réseau vivant**, le monde du client, sur la structure en trois écrans du brief. Une scène obsidienne filmée dans le noir : une constellation de nœuds reliés en 3D (Canvas temps réel) qui respire et réagit au visiteur, l'accent indigo/violet, les vitrines de verre, le carrousel des réalisations, la signature « DC » en particules. Aucune requête tierce. Tout respecte `prefers-reduced-motion`.
+**Studio obsidienne — réseau vivant**, le monde du client. La structure en trois écrans du brief d'origine s'est élargie pour répondre aux trois questions que le visiteur se posait sans trouver de réponse — ce que je vends, comment ça se passe, combien ça coûte — sans changer ni le monde ni le rythme. Une scène obsidienne filmée dans le noir : une constellation de nœuds reliés en 3D (Canvas temps réel) qui respire et réagit au visiteur, l'accent indigo/violet, les vitrines de verre, le carrousel des réalisations, la signature « DC » en particules. Aucune requête tierce. Tout respecte `prefers-reduced-motion`.
 
 ## Palette
 
@@ -28,14 +28,24 @@ Toutes auto-hébergées (`fonts.css`, `fonts/*.woff2`).
 
 1. **Qui** — scène obsidienne plein écran, réseau de nœuds 3D derrière le titre *Un site web qui vous ressemble, fait par une seule personne.*, portrait à droite (vignette au-dessus du titre sur mobile), deux pastilles (Sites web, Applications), bouton magnétique + téléphone, faits 25 / 1 / 24 h.
 2. **Le travail** — carrousel « vitrine » (maquette ordinateur + téléphone, rotation auto, parallaxe) avec Jayden, Pizzeria Pino, Yuméa, Toukin ; sous le carrousel, trois vitrines de verre (sur mesure, un seul interlocuteur, et après). Puis le moment signature : les particules se reforment en « DC ».
-3. **Le contact** — formulaire nom / e-mail / téléphone / message, envoi AJAX, repli e-mail ; à côté, téléphone, WhatsApp, adresse.
+3. **Ce que je fais** (II) — index typographique `.field-list` de cinq prestations, filet violet et décalage au survol ; deux lignes renvoient aux pages SEO.
+4. **La méthode** (III) — quatre cartes `.route-step` reliées par un filet horizontal qui rappelle les arêtes du réseau de fond ; chacune porte son délai en mono.
+5. **Le budget** (IV) — trois vitrines de verre `.tier`, celle du milieu marquée « le plus demandé » (bordure chaude + `--bloom`) ; dessous, trois `.bnote` à filet gauche (après la mise en ligne, pourquoi pas moins cher, payer en plusieurs fois).
+6. **Questions** (V) — huit `<details>` `.qa-item`, accordéon natif sans JS, indicateur « + » qui pivote.
+7. **Le contact** (VI) — formulaire nom / e-mail / téléphone / message, envoi AJAX, repli e-mail ; à côté, téléphone, WhatsApp, adresse.
+
+Le moment signature reste entre les questions et le contact. La numérotation des folios court désormais de I à VI.
 
 Motion : réseau vivant (parallaxe souris, nœud illuminé sous le curseur, pause hors viewport), révélations « la chaleur qui monte », boutons magnétiques, signature qui se trace, fil de progression à gauche, halo au curseur. Tout se fige sous `prefers-reduced-motion`.
 
-## Pages de service et légales
+## Pages de service, pages locales, blog et légales
 
-`styles.css` + `page-theme.css` (surcharge obsidienne, chargée après) : mêmes tokens, même typo, hero à champ de points, cartes verre, accent violet. Deux pages de service : création de site web à Liège, application mobile.
+`styles.css` + `page-theme.css` (surcharge obsidienne, chargée après) : mêmes tokens, même typo, hero à champ de points, cartes verre, accent violet.
+
+- **Pages de service et locales** : application mobile, puis Liège, Seraing, Huy et Namur. Même gabarit (hero, `highlights-grid`, cartes métiers, bloc budget, méthode en 4 étapes, FAQ, liens croisés), mais un texte réellement distinct par ville — jamais la même page avec le nom changé.
+- **Blog** (`blog.html` + `blog/*.html`) : liste en cartes `.post-card`, article en colonne de lecture de 720 px (`.post`), encadrés `.post-aside` à filet violet, tableaux `.post-table` à en-têtes mono, bloc de fin `.post-cta`. Styles ajoutés en fin de `page-theme.css`.
+- Les liens en plein texte sont soulignés : sans cela, ils ne se distinguaient que par la couleur (WCAG 1.4.1).
 
 ## Ce qui n'existe plus
 
-Le Labo et ses cinq outils, les pages crypto / IA / bots, le multilingue, les sections thèse / artisan / champ / questions de l'ancien accueil (leur contenu vit dans les trois écrans). Les essais clair / verre liquide / Slate-Mint ont été abandonnés à la demande du client, qui préfère son monde d'origine.
+Le Labo et ses cinq outils, les pages crypto / IA / bots, le multilingue. Les sections thèse / artisan / champ de l'ancien accueil ; en revanche `.field-list` et `.qa`, restées dans `home.css`, resservent aux nouvelles sections « Ce que je fais » et « Questions ». Les essais clair / verre liquide / Slate-Mint ont été abandonnés à la demande du client, qui préfère son monde d'origine.

@@ -34,8 +34,8 @@
 
   <link rel="preload" as="font" type="font/woff2" href="fonts/bricolage-grotesque-latin.woff2" crossorigin />
   <link rel="preload" as="font" type="font/woff2" href="fonts/libre-franklin-latin.woff2" crossorigin />
-  <link rel="stylesheet" href="fonts.css?v=20260905" />
-  <link rel="stylesheet" href="home.css?v=20260905" />
+  <link rel="stylesheet" href="fonts.css?v=20260911" />
+  <link rel="stylesheet" href="home.css?v=20260911" />
 
   <script type="application/ld+json">
   {
@@ -96,7 +96,62 @@
         "isPartOf": { "@id": "https://digitalconcept.be/#website" },
         "about": { "@id": "https://digitalconcept.be/#organization" },
         "datePublished": "2026-06-14",
-        "dateModified": "2026-09-02"
+        "dateModified": "2026-09-11"
+      },
+      {
+        "@type": "OfferCatalog",
+        "@id": "https://digitalconcept.be/#offres",
+        "name": "Création de sites web — ordres de grandeur",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Site d'une page (landing)",
+            "description": "Une page longue pensée pour faire agir, formulaire de contact, nom de domaine et mise en ligne compris.",
+            "priceSpecification": { "@type": "PriceSpecification", "minPrice": 690, "priceCurrency": "EUR" },
+            "availability": "https://schema.org/InStock",
+            "itemOffered": { "@type": "Service", "name": "Création de site web d'une page", "serviceType": "Création de site web", "provider": { "@id": "https://digitalconcept.be/#organization" } }
+          },
+          {
+            "@type": "Offer",
+            "name": "Site vitrine sur mesure",
+            "description": "5 à 10 pages dessinées sur mesure, référencement local, contenus modifiables par le client, prise en main comprise.",
+            "priceSpecification": { "@type": "PriceSpecification", "minPrice": 1400, "maxPrice": 2800, "priceCurrency": "EUR" },
+            "availability": "https://schema.org/InStock",
+            "itemOffered": { "@type": "Service", "name": "Création de site vitrine sur mesure", "serviceType": "Création de site web", "provider": { "@id": "https://digitalconcept.be/#organization" } }
+          },
+          {
+            "@type": "Offer",
+            "name": "Boutique ou réservation en ligne",
+            "description": "Paiement en ligne sécurisé, agenda de réservation ou catalogue produits, gestion des commandes et des stocks.",
+            "priceSpecification": { "@type": "PriceSpecification", "minPrice": 2900, "priceCurrency": "EUR" },
+            "availability": "https://schema.org/InStock",
+            "itemOffered": { "@type": "Service", "name": "Création de site e-commerce ou de réservation", "serviceType": "Création de site e-commerce", "provider": { "@id": "https://digitalconcept.be/#organization" } }
+          },
+          {
+            "@type": "Offer",
+            "name": "Hébergement, maintenance et évolutions",
+            "description": "Hébergement, sauvegardes, mises à jour de sécurité et petites évolutions. Les trois premiers mois sont compris avec chaque site.",
+            "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": 25, "priceCurrency": "EUR", "unitText": "MONTH", "billingIncrement": 1 },
+            "availability": "https://schema.org/InStock",
+            "itemOffered": { "@type": "Service", "name": "Maintenance de site web", "serviceType": "Maintenance de site web", "provider": { "@id": "https://digitalconcept.be/#organization" } }
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://digitalconcept.be/#faq",
+        "isPartOf": { "@id": "https://digitalconcept.be/#webpage" },
+        "inLanguage": "fr-BE",
+        "mainEntity": [
+          { "@type": "Question", "name": "Je n'y connais rien en informatique. C'est un problème ?", "acceptedAnswer": { "@type": "Answer", "text": "Au contraire, c'est le cas de la plupart de mes clients. Vous êtes l'expert de votre métier, je suis l'expert du mien. Vous n'aurez jamais à comprendre un terme technique : je vous explique chaque décision en français, et je m'occupe de tout ce qui est technique — domaine, hébergement, e-mails, sécurité." } },
+          { "@type": "Question", "name": "En combien de temps mon site sera-t-il en ligne ?", "acceptedAnswer": { "@type": "Answer", "text": "Comptez une à deux semaines pour un site vitrine, quelques semaines pour une boutique ou un projet sur mesure. Le délai figure dans le devis et je m'y tiens. Ce qui allonge le plus les projets, ce n'est presque jamais le code : ce sont les textes et les photos. Si vous les avez déjà, on va vite." } },
+          { "@type": "Question", "name": "Est-ce que je pourrai modifier mon site moi-même ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Vos textes, vos photos, vos tarifs, vos horaires : tout ce qui change souvent reste dans vos mains, depuis une interface simple. Je vous montre comment faire en fin de projet. Et si vous préférez me confier une modification, un message suffit." } },
+          { "@type": "Question", "name": "Mon site sera-t-il trouvé sur Google ?", "acceptedAnswer": { "@type": "Answer", "text": "Chaque site part avec des bases solides : pages rapides, structure propre, contenus écrits pour vos vrais clients, données structurées et fiche Google Business soignée. Soyons honnêtes sur la suite : personne ne peut garantir une première place, et méfiez-vous de qui vous la promet. Ce que je garantis, c'est un site techniquement irréprochable, sur lequel le référencement peut réellement se construire." } },
+          { "@type": "Question", "name": "Pourquoi vous plutôt qu'une agence ?", "acceptedAnswer": { "@type": "Answer", "text": "Dans une agence, le commercial qui vous séduit n'est pas celui qui dessine, et celui qui dessine n'est pas celui qui code. Chaque passage de main coûte du temps, de l'argent et un peu de votre intention d'origine. Ici, les trois personnes sont la même, avec 25 ans de métier. Vous décidez plus vite, et vous savez toujours à qui parler." } },
+          { "@type": "Question", "name": "Pourquoi pas Wix, Squarespace ou un thème WordPress ?", "acceptedAnswer": { "@type": "Answer", "text": "Ce sont de bons outils, et pour certains projets je vous le dirai franchement. Leurs limites arrivent plus tard : des pages plus lourdes, un abonnement à vie, et surtout une apparence que des milliers de sites partagent déjà. Un site sur mesure coûte plus cher au départ et vous appartient vraiment." } },
+          { "@type": "Question", "name": "Travaillez-vous en dehors de la région de Liège ?", "acceptedAnswer": { "@type": "Answer", "text": "Je suis à Neupré, entre Liège et Huy, et j'aime rencontrer mes clients quand c'est possible. Mais je travaille dans toute la Belgique et à distance : visio, téléphone, e-mail. Une bonne partie de mes projets se sont faits sans que l'on se voie une seule fois." } },
+          { "@type": "Question", "name": "Et si le résultat ne me plaît pas ?", "acceptedAnswer": { "@type": "Answer", "text": "C'est justement pour ça que vous validez les maquettes avant que je code, et que vous suivez le site prendre forme sur une adresse privée. Les surprises de fin de projet viennent des projets où le client ne voit rien avant la livraison. Ici, vous voyez tout, tout le temps, et on corrige au fur et à mesure." } }
+        ]
       }
     ]
   }
@@ -126,8 +181,10 @@
       </a>
       <nav class="nav-links" aria-label="Navigation principale">
         <a href="#works" class="nav-l">Réalisations</a>
-        <a href="creation-site-web-liege.html" class="nav-l">Sites web</a>
-        <a href="creation-application-mobile-belgique.html" class="nav-l">Applications</a>
+        <a href="#services" class="nav-l">Services</a>
+        <a href="#budget" class="nav-l">Budget</a>
+        <a href="#questions" class="nav-l">Questions</a>
+        <a href="blog.html" class="nav-l">Blog</a>
         <a href="#commande" class="btn btn--mark nav-cta">Me contacter</a>
       </nav>
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-drawer" aria-label="Ouvrir le menu">
@@ -138,9 +195,12 @@
   <div class="nav-scrim" data-nav-close aria-hidden="true"></div>
   <nav class="nav-drawer" id="nav-drawer" aria-label="Menu">
     <a href="#works"><span class="idx">01</span>Réalisations</a>
-    <a href="creation-site-web-liege.html"><span class="idx">02</span>Sites web</a>
-    <a href="creation-application-mobile-belgique.html"><span class="idx">03</span>Applications</a>
-    <a href="#commande"><span class="idx">04</span>Me contacter</a>
+    <a href="#services"><span class="idx">02</span>Services</a>
+    <a href="#methode"><span class="idx">03</span>La méthode</a>
+    <a href="#budget"><span class="idx">04</span>Budget</a>
+    <a href="#questions"><span class="idx">05</span>Questions</a>
+    <a href="blog.html"><span class="idx">06</span>Blog</a>
+    <a href="#commande"><span class="idx">07</span>Me contacter</a>
   </nav>
 
   <main id="top">
@@ -241,6 +301,204 @@
       </div>
     </section>
 
+    <!-- ===== CE QUE JE FAIS ===== -->
+    <section class="offer plate spread" id="services">
+      <div class="wrap">
+        <div class="spread-head reveal">
+          <p class="folio"><span class="folio-n">II</span> Ce que je fais</p>
+          <h2 class="h-sect">Un site, et ce qu'il faut autour.</h2>
+          <p class="lead">Cinq prestations, toujours les mêmes mains. Si votre besoin n'est pas dans la liste, demandez&nbsp;: je vous dirai honnêtement si c'est pour moi.</p>
+        </div>
+
+        <div class="field-list">
+          <a class="field-row reveal" href="creation-site-web-liege.html">
+            <span class="idx">01</span>
+            <div class="body">
+              <h3>Site vitrine sur mesure</h3>
+              <p>Présenter votre activité, inspirer confiance et recevoir des appels. Dessiné pour vous, jamais posé sur un thème acheté. C'est le besoin de neuf clients sur dix.</p>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <div class="field-row no-link reveal">
+            <span class="idx">02</span>
+            <div class="body">
+              <h3>Boutique &amp; réservation en ligne</h3>
+              <p>Vendre vos produits ou laisser vos clients réserver un créneau seuls, même à 23&nbsp;h. Paiement sécurisé, gestion simple, pensé mobile d'abord.</p>
+            </div>
+          </div>
+          <div class="field-row no-link reveal">
+            <span class="idx">03</span>
+            <div class="body">
+              <h3>Refonte d'un site existant</h3>
+              <p>Votre site est lent, daté ou invisible sur Google&nbsp;? On garde ce qui marche, on refait le reste. Vos contenus et votre référencement acquis sont préservés.</p>
+            </div>
+          </div>
+          <a class="field-row reveal" href="creation-application-mobile-belgique.html">
+            <span class="idx">04</span>
+            <div class="body">
+              <h3>Application mobile iOS &amp; Android</h3>
+              <p>De la maquette à la publication sur les stores, quand un site ne suffit plus et qu'il vous faut une vraie application.</p>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="field-row reveal" href="#budget">
+            <span class="idx">05</span>
+            <div class="body">
+              <h3>Hébergement, mises à jour &amp; évolutions</h3>
+              <p>Une fois en ligne, un site vit. Je m'occupe de l'hébergement, des sauvegardes, de la sécurité et des changements que vous me demandez.</p>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LA MÉTHODE ===== -->
+    <section class="method plate spread" id="methode">
+      <div class="wrap">
+        <div class="spread-head reveal">
+          <p class="folio"><span class="folio-n">III</span> La méthode</p>
+          <h2 class="h-sect">Comment ça se passe,<br />concrètement.</h2>
+          <p class="lead">Pas de mystère et pas de jargon. Quatre étapes, et vous savez à chaque instant où en est votre projet.</p>
+        </div>
+
+        <ol class="route">
+          <li class="route-step reveal">
+            <span class="route-n">01</span>
+            <h3>On se parle</h3>
+            <p>Un appel, un café à Neupré ou une visio. Je vous écoute décrire votre activité et vos clients&nbsp;: c'est là que se joue l'essentiel du site.</p>
+            <p class="route-when">30 à 45 minutes · gratuit</p>
+          </li>
+          <li class="route-step reveal d1">
+            <span class="route-n">02</span>
+            <h3>Vous recevez un devis clair</h3>
+            <p>Détaillé ligne par ligne, avec un délai ferme. Vous savez ce que vous payez et ce que vous n'avez pas à payer. Le prix convenu ne bouge plus ensuite.</p>
+            <p class="route-when">Sous 24&nbsp;h · sans engagement</p>
+          </li>
+          <li class="route-step reveal d2">
+            <span class="route-n">03</span>
+            <h3>Je dessine, puis je code</h3>
+            <p>Vous voyez les maquettes avant la moindre ligne de code, puis le site prendre forme sur une adresse privée. Vous validez à chaque étape.</p>
+            <p class="route-when">1 à 3 semaines selon le projet</p>
+          </li>
+          <li class="route-step reveal d3">
+            <span class="route-n">04</span>
+            <h3>Mise en ligne, et je reste là</h3>
+            <p>Je publie, je vérifie la vitesse et le référencement, je vous montre comment gérer vos contenus. Puis je reste votre interlocuteur&nbsp;: pas de passage de relais.</p>
+            <p class="route-when">Suivi compris 3 mois</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== LE BUDGET ===== -->
+    <section class="budget plate spread" id="budget">
+      <div class="wrap">
+        <div class="spread-head reveal">
+          <p class="folio"><span class="folio-n">IV</span> Le budget</p>
+          <h2 class="h-sect">Parlons d'argent tout de suite.</h2>
+          <p class="lead">Chaque projet est différent, donc je ne vends pas de forfait tout fait. Mais vous avez le droit de savoir dans quel ordre de grandeur vous entrez avant de m'écrire. Voici la vérité.</p>
+        </div>
+
+        <div class="tiers">
+          <article class="tier reveal">
+            <p class="tier-kind">Une seule page</p>
+            <p class="tier-price"><span class="tier-from">à partir de</span> 690 <span class="tier-cur">€</span></p>
+            <p class="tier-for">Pour lancer une activité, une offre ou un événement, vite et bien.</p>
+            <ul class="tier-list">
+              <li>Une page longue, pensée pour faire agir</li>
+              <li>Formulaire de contact et bouton d'appel</li>
+              <li>Nom de domaine et mise en ligne compris</li>
+            </ul>
+          </article>
+          <article class="tier tier--lead reveal d1">
+            <p class="tier-kind">Site vitrine complet</p>
+            <p class="tier-price"><span class="tier-from">entre</span> 1 400 <span class="tier-to">–</span> 2 800 <span class="tier-cur">€</span></p>
+            <p class="tier-for">Le choix de la plupart des indépendants, artisans et artistes.</p>
+            <ul class="tier-list">
+              <li>5 à 10 pages dessinées sur mesure</li>
+              <li>Référencement local, fiche Google</li>
+              <li>Vous modifiez vos textes et vos photos</li>
+              <li>Séance de prise en main comprise</li>
+            </ul>
+            <p class="tier-flag">Le plus demandé</p>
+          </article>
+          <article class="tier reveal d2">
+            <p class="tier-kind">Boutique ou réservation</p>
+            <p class="tier-price"><span class="tier-from">à partir de</span> 2 900 <span class="tier-cur">€</span></p>
+            <p class="tier-for">Quand le site doit encaisser, réserver ou gérer un catalogue.</p>
+            <ul class="tier-list">
+              <li>Paiement en ligne sécurisé</li>
+              <li>Agenda de réservation ou catalogue produits</li>
+              <li>Gestion des commandes et des stocks</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="budget-notes reveal">
+          <div class="bnote">
+            <h3>Et après&nbsp;?</h3>
+            <p>Hébergement, sauvegardes, mises à jour de sécurité et petites évolutions&nbsp;: <b>à partir de 25 €/mois</b>. Les trois premiers mois sont compris avec chaque site. Vous pouvez arrêter quand vous voulez, et vous partez avec votre site&nbsp;: il vous appartient.</p>
+          </div>
+          <div class="bnote">
+            <h3>Pourquoi pas moins cher&nbsp;?</h3>
+            <p>Parce qu'en dessous, on ne dessine plus&nbsp;: on installe un thème acheté que des milliers d'autres utilisent déjà. C'est un choix légitime — ce n'est simplement pas mon métier, et ce n'est pas ce qui vous distinguera de votre concurrent.</p>
+          </div>
+          <div class="bnote">
+            <h3>Payer en plusieurs fois</h3>
+            <p>Un tiers à la commande, le solde à la mise en ligne. Pour les projets plus lourds, on étale en mensualités&nbsp;: dites-le-moi dès le premier échange, ça ne pose aucun problème.</p>
+          </div>
+        </div>
+
+        <p class="budget-foot reveal">Ces montants sont des ordres de grandeur honnêtes, pas un tarif affiché&nbsp;: votre devis, lui, sera ferme et détaillé. <a href="#commande" class="reg-link">Décrivez-moi votre projet <span aria-hidden="true">↗</span></a></p>
+      </div>
+    </section>
+
+    <!-- ===== QUESTIONS ===== -->
+    <section class="questions plate spread" id="questions">
+      <div class="wrap">
+        <div class="spread-head reveal">
+          <p class="folio"><span class="folio-n">V</span> Questions</p>
+          <h2 class="h-sect">Ce qu'on me demande<br />le plus souvent.</h2>
+        </div>
+
+        <div class="qa">
+          <details class="qa-item reveal">
+            <summary><span class="qi">01</span> Je n'y connais rien en informatique. C'est un problème&nbsp;?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="qa-body"><p>Au contraire, c'est le cas de la plupart de mes clients. Vous êtes l'expert de votre métier, je suis l'expert du mien. Vous n'aurez jamais à comprendre un terme technique&nbsp;: je vous explique chaque décision en français, et je m'occupe de tout ce qui est technique — domaine, hébergement, e-mails, sécurité.</p></div>
+          </details>
+          <details class="qa-item reveal">
+            <summary><span class="qi">02</span> En combien de temps mon site sera-t-il en ligne&nbsp;?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="qa-body"><p>Comptez une à deux semaines pour un site vitrine, quelques semaines pour une boutique ou un projet sur mesure. Le délai figure dans le devis et je m'y tiens. Ce qui allonge le plus les projets, ce n'est presque jamais le code&nbsp;: ce sont les textes et les photos. Si vous les avez déjà, on va vite.</p></div>
+          </details>
+          <details class="qa-item reveal">
+            <summary><span class="qi">03</span> Est-ce que je pourrai modifier mon site moi-même&nbsp;?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="qa-body"><p>Oui. Vos textes, vos photos, vos tarifs, vos horaires&nbsp;: tout ce qui change souvent reste dans vos mains, depuis une interface simple. Je vous montre comment faire en fin de projet. Et si vous préférez me confier une modification, un message suffit.</p></div>
+          </details>
+          <details class="qa-item reveal">
+            <summary><span class="qi">04</span> Mon site sera-t-il trouvé sur Google&nbsp;?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="qa-body"><p>Chaque site part avec des bases solides&nbsp;: pages rapides, structure propre, contenus écrits pour vos vrais clients, données structurées et fiche Google Business soignée. Soyons honnêtes sur la suite&nbsp;: personne ne peut garantir une première place, et méfiez-vous de qui vous la promet. Ce que je garantis, c'est un site techniquement irréprochable, sur lequel le référencement peut réellement se construire.</p></div>
+          </details>
+          <details class="qa-item reveal">
+            <summary><span class="qi">05</span> Pourquoi vous plutôt qu'une agence&nbsp;?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="qa-body"><p>Dans une agence, le commercial qui vous séduit n'est pas celui qui dessine, et celui qui dessine n'est pas celui qui code. Chaque passage de main coûte du temps, de l'argent et un peu de votre intention d'origine. Ici, les trois personnes sont la même, avec 25 ans de métier. Vous décidez plus vite, et vous savez toujours à qui parler.</p></div>
+          </details>
+          <details class="qa-item reveal">
+            <summary><span class="qi">06</span> Pourquoi pas Wix, Squarespace ou un thème WordPress&nbsp;?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="qa-body"><p>Ce sont de bons outils, et pour certains projets je vous le dirai franchement. Leurs limites arrivent plus tard&nbsp;: des pages plus lourdes, un abonnement à vie, et surtout une apparence que des milliers de sites partagent déjà. Un site sur mesure coûte plus cher au départ et vous appartient vraiment. <a href="blog/wordpress-ou-site-sur-mesure.html">J'ai écrit un article complet là-dessus</a>.</p></div>
+          </details>
+          <details class="qa-item reveal">
+            <summary><span class="qi">07</span> Travaillez-vous en dehors de la région de Liège&nbsp;?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="qa-body"><p>Je suis à Neupré, entre Liège et Huy, et j'aime rencontrer mes clients quand c'est possible. Mais je travaille dans toute la Belgique et à distance&nbsp;: visio, téléphone, e-mail. Une bonne partie de mes projets se sont faits sans que l'on se voie une seule fois.</p></div>
+          </details>
+          <details class="qa-item reveal">
+            <summary><span class="qi">08</span> Et si le résultat ne me plaît pas&nbsp;?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="qa-body"><p>C'est justement pour ça que vous validez les maquettes avant que je code, et que vous suivez le site prendre forme sur une adresse privée. Les surprises de fin de projet viennent des projets où le client ne voit rien avant la livraison. Ici, vous voyez tout, tout le temps, et on corrige au fur et à mesure.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== SIGNATURE (moment épinglé : les particules se reforment en « DC ») ===== -->
     <section class="signature" id="signature" aria-label="La signature Digital Concept">
       <div class="signature-inner">
@@ -256,7 +514,7 @@
     <section class="commission plate spread" id="commande">
       <div class="wrap commission-grid">
         <div class="reveal">
-          <p class="folio"><span class="folio-n">II</span> Le contact</p>
+          <p class="folio"><span class="folio-n">VI</span> Le contact</p>
           <h2 class="h-sect">Parlons de votre site.</h2>
           <p class="lead">Décrivez-moi votre activité et ce que vous attendez de votre site, en quelques lignes. Je vous réponds sous 24 h avec un avis honnête et une proposition claire. Gratuit, sans engagement.</p>
           <form class="cta-form" id="contact-form" data-endpoint="https://formsubmit.co/ajax/contact@digitalconcept.be" data-mailto="contact@digitalconcept.be" novalidate>
@@ -319,14 +577,27 @@
           <div>
             <h3>Services</h3>
             <ul>
-              <li><a href="creation-site-web-liege.html">Sites web</a></li>
+              <li><a href="creation-site-web-liege.html">Création de site web</a></li>
               <li><a href="creation-application-mobile-belgique.html">Applications mobiles</a></li>
+              <li><a href="#budget">Budget &amp; tarifs</a></li>
+              <li><a href="#methode">La méthode</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Votre région</h3>
+            <ul>
+              <li><a href="creation-site-web-liege.html">Liège &amp; Neupré</a></li>
+              <li><a href="creation-site-web-seraing.html">Seraing</a></li>
+              <li><a href="creation-site-web-huy.html">Huy</a></li>
+              <li><a href="creation-site-web-namur.html">Namur</a></li>
             </ul>
           </div>
           <div>
             <h3>Le site</h3>
             <ul>
               <li><a href="#works">Réalisations</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="#questions">Questions fréquentes</a></li>
               <li><a href="#commande">Me contacter</a></li>
             </ul>
           </div>
@@ -367,7 +638,7 @@
     </div>
   </div>
 
-  <script src="home.js?v=20260905"></script>
-  <script src="cookies.js?v=20260905" defer></script>
+  <script src="home.js?v=20260911"></script>
+  <script src="cookies.js?v=20260911" defer></script>
 </body>
 </html>

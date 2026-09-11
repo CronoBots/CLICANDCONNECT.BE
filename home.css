@@ -452,7 +452,7 @@ a.field-row:hover .arrow { opacity: 1; transform: none; }
 .colophon { border-top: 1px solid var(--line-2); background: linear-gradient(180deg, transparent, rgba(7,9,13,.6)); padding-block: clamp(3rem, 6vw, 5rem) 2rem; margin-top: clamp(2rem,5vw,4rem); }
 .colophon-grid { display: grid; grid-template-columns: 1.1fr 1.6fr; gap: clamp(2rem, 5vw, 4rem); }
 .colophon .tag { margin-top: 1rem; color: var(--ink-soft); max-width: 40ch; font-size: .95rem; }
-.colophon-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.colophon-cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
 .colophon-cols h3 { font-family: var(--f-mono); font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--heat-txt); font-weight: 500; margin-bottom: 1rem; }
 .colophon-cols ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
 .colophon-cols a, .colophon-cols span { color: var(--ink-soft); font-size: .95rem; transition: color .2s var(--ease); }
@@ -604,4 +604,95 @@ a.field-row:hover .arrow { opacity: 1; transform: none; }
   .cover-portrait { order: -1; justify-self: start; width: 132px; margin-bottom: 0; }
   .cover-portrait img { aspect-ratio: 1 / 1; }
   .cover-portrait .stamp { display: none; }
+}
+
+/* =====================================================================
+   LA MÉTHODE — le parcours en quatre temps
+   ===================================================================== */
+.method { border-top: 1px solid var(--line); }
+.route { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(1rem, 2.2vw, 1.8rem); counter-reset: route; }
+.route-step {
+  position: relative; padding: clamp(1.5rem, 2.6vw, 2rem) clamp(1.3rem, 2.2vw, 1.7rem);
+  background: linear-gradient(180deg, rgba(26,27,48,.55), rgba(13,14,27,.45));
+  border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--sh-2);
+}
+/* Le fil qui relie les étapes, comme les arêtes du réseau de fond */
+.route-step::before {
+  content: ""; position: absolute; top: clamp(2.35rem, 3.4vw, 2.9rem); left: 100%; width: clamp(1rem, 2.2vw, 1.8rem); height: 1px;
+  background: linear-gradient(90deg, var(--line-heat), transparent);
+}
+.route-step:last-child::before { display: none; }
+.route-n {
+  display: inline-grid; place-items: center; width: 38px; height: 38px; margin-bottom: 1rem;
+  font-family: var(--f-mono); font-size: .86rem; color: var(--heat-core);
+  background: rgba(139,124,255,.09); border: 1px solid var(--line-heat); border-radius: 10px;
+}
+.route-step h3 { font-size: clamp(1.1rem, 1rem + .5vw, 1.3rem); font-weight: 700; letter-spacing: -.01em; }
+.route-step p { margin-top: .6rem; color: var(--ink-soft); font-size: .95rem; }
+.route-when { margin-top: .9rem !important; padding-top: .8rem; border-top: 1px solid var(--line); font-family: var(--f-mono); font-size: .74rem; letter-spacing: .08em; text-transform: uppercase; color: var(--heat-txt) !important; }
+
+/* =====================================================================
+   LE BUDGET — ordres de grandeur, pas une grille tarifaire
+   ===================================================================== */
+.budget { border-top: 1px solid var(--line); }
+.tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 2.2vw, 1.8rem); align-items: stretch; }
+.tier {
+  position: relative; display: flex; flex-direction: column; padding: clamp(1.6rem, 2.8vw, 2.2rem);
+  background: var(--glass); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+  border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--sh-glass);
+  transition: transform .4s var(--ease), border-color .4s var(--ease);
+}
+.tier:hover { transform: translateY(-4px); border-color: var(--line-heat); }
+.tier--lead { border-color: var(--line-heat); box-shadow: var(--sh-glass), var(--bloom); }
+.tier-kind { font-family: var(--f-mono); font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--heat-txt); }
+.tier-price { margin-top: .9rem; font-family: var(--f-display); font-weight: 700; font-size: clamp(1.75rem, 1.2rem + 1.6vw, 2.4rem); letter-spacing: -.03em; line-height: 1.05; color: var(--ink); text-wrap: balance; }
+.tier-from, .tier-to { display: block; font-family: var(--f-body); font-size: .82rem; font-weight: 500; letter-spacing: .02em; color: var(--ink-dim); }
+.tier-to { display: inline; color: var(--ink-dim); font-weight: 500; }
+.tier-cur { color: var(--heat); }
+.tier-for { margin-top: 1rem; color: var(--ink-warm); font-size: .96rem; }
+.tier-list { list-style: none; margin: 1.3rem 0 0; padding: 1.3rem 0 0; border-top: 1px solid var(--line); display: grid; gap: .65rem; }
+.tier-list li { position: relative; padding-left: 1.5rem; color: var(--ink-soft); font-size: .93rem; }
+.tier-list li::before { content: ""; position: absolute; left: 0; top: .5em; width: 7px; height: 7px; border-radius: 50%; background: var(--heat); box-shadow: 0 0 8px rgba(139,124,255,.6); }
+.tier-flag {
+  position: absolute; top: -.75rem; right: clamp(1.2rem, 2.4vw, 1.8rem);
+  padding: .3rem .75rem; font-family: var(--f-mono); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase;
+  color: #14100a; background: linear-gradient(135deg, var(--heat-core), var(--heat)); border-radius: 20px;
+}
+
+.budget-notes { margin-top: clamp(1.6rem, 3vw, 2.4rem); display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 2.2vw, 1.8rem); }
+.bnote { padding: clamp(1.2rem, 2.2vw, 1.6rem); border: 1px solid var(--line); border-left: 2px solid var(--line-heat); border-radius: 0 12px 12px 0; background: rgba(20,21,39,.4); }
+.bnote h3 { font-size: 1.02rem; font-weight: 700; color: var(--ink); }
+.bnote p { margin-top: .55rem; color: var(--ink-soft); font-size: .93rem; }
+.bnote b { color: var(--heat-core); }
+.budget-foot { margin-top: clamp(1.6rem, 3vw, 2.2rem); color: var(--ink-dim); font-size: .95rem; max-width: 72ch; }
+.reg-link { color: var(--heat-txt); font-weight: 600; border-bottom: 1px solid var(--line-heat); padding-bottom: 1px; transition: color .25s var(--ease); }
+.reg-link:hover { color: var(--heat-core); }
+
+/* =====================================================================
+   CE QUE JE FAIS · QUESTIONS — raccords de section
+   ===================================================================== */
+.offer { border-top: 1px solid var(--line); }
+.questions { border-top: 1px solid var(--line); }
+.questions .qa { margin-top: clamp(.5rem, 1.5vw, 1rem); }
+.qa-body a { color: var(--heat-txt); border-bottom: 1px solid var(--line-heat); padding-bottom: 1px; }
+.qa-body a:hover { color: var(--heat-core); }
+
+/* =====================================================================
+   Responsive des nouvelles sections
+   ===================================================================== */
+@media (max-width: 1100px) {
+  .route { grid-template-columns: repeat(2, 1fr); gap: clamp(1rem, 2.4vw, 1.6rem); }
+  .route-step:nth-child(2)::before { display: none; }
+}
+@media (max-width: 960px) {
+  .tiers, .budget-notes { grid-template-columns: 1fr; }
+  .tier--lead { order: -1; }
+  .colophon-cols { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 620px) {
+  .route { grid-template-columns: 1fr; }
+  .route-step::before { display: none; }
+}
+@media (max-width: 520px) {
+  .colophon-cols { grid-template-columns: 1fr; }
 }

@@ -152,3 +152,83 @@ body.legal-page .cookie-consent .c-accept { color: #14100a !important; backgroun
 @keyframes vtOut { to { opacity: 0; transform: translateY(-8px); } }
 @keyframes vtIn { from { opacity: 0; transform: translateY(10px); } }
 @media (prefers-reduced-motion: reduce) { ::view-transition-old(root), ::view-transition-new(root) { animation: none; } }
+
+/* =====================================================================
+   BLOG — liste d'articles et corps d'article
+   ===================================================================== */
+
+/* Liste — une carte par article */
+body.legal-page .post-list { display: grid; gap: 18px; margin-top: 28px; }
+body.legal-page .post-card {
+  display: block; padding: clamp(20px, 3vw, 28px);
+  border: 1px solid var(--line); border-radius: 16px; background: var(--glass);
+  transition: border-color .25s var(--ease), transform .25s var(--ease);
+}
+body.legal-page .post-card:hover { border-color: var(--line-heat); transform: translateY(-2px); }
+body.legal-page .post-card h2 { font-size: clamp(1.25rem, 1.05rem + .8vw, 1.7rem); margin: .5rem 0 .6rem; }
+body.legal-page .post-card:hover h2 { color: var(--heat-core) !important; }
+body.legal-page .post-card p { margin: 0; color: var(--ink-soft); line-height: 1.7; }
+body.legal-page .post-meta {
+  font-family: var(--f-mono); font-size: .74rem; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--heat-txt); display: flex; flex-wrap: wrap; gap: .5rem 1rem;
+}
+body.legal-page .post-more { display: inline-block; margin-top: 1rem; color: var(--heat-txt); font-weight: 600; }
+
+/* Corps d'article — colonne de lecture */
+body.legal-page .post { max-width: 720px; margin: 0 auto; }
+body.legal-page .post > p { line-height: 1.8; margin: 0 0 1.2rem; font-size: 1.02rem; }
+body.legal-page .post h2 {
+  font-size: clamp(1.5rem, 1.2rem + 1.3vw, 2.1rem); margin: 2.8rem 0 1rem;
+  padding-top: 1.6rem; border-top: 1px solid var(--line);
+}
+body.legal-page .post h3 { font-size: clamp(1.12rem, 1rem + .5vw, 1.32rem); margin: 1.9rem 0 .7rem; }
+body.legal-page .post ul, body.legal-page .post ol { margin: 0 0 1.4rem; padding-left: 1.3rem; }
+body.legal-page .post li { line-height: 1.75; margin-bottom: .6rem; }
+body.legal-page .post a { border-bottom: 1px solid var(--line-heat); padding-bottom: 1px; }
+body.legal-page .post a:hover { color: var(--heat-core); }
+
+/* Chapô */
+body.legal-page .post-lead { font-size: 1.14rem !important; line-height: 1.7 !important; color: var(--ink) !important; }
+
+/* Encadré « à retenir » */
+body.legal-page .post-aside {
+  margin: 2rem 0; padding: clamp(18px, 2.6vw, 24px);
+  border: 1px solid var(--line); border-left: 2px solid var(--heat); border-radius: 0 14px 14px 0;
+  background: rgba(20,21,39,.5);
+}
+body.legal-page .post-aside h3 { margin: 0 0 .6rem; font-size: 1rem; }
+body.legal-page .post-aside p:last-child { margin-bottom: 0; }
+
+/* Tableau de prix */
+body.legal-page .post-table { width: 100%; margin: 1.6rem 0 2rem; border-collapse: collapse; font-size: .95rem; }
+body.legal-page .post-table th, body.legal-page .post-table td { padding: .85rem .7rem; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+body.legal-page .post-table thead th {
+  font-family: var(--f-mono); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--heat-txt) !important; border-bottom-color: var(--line-2);
+}
+body.legal-page .post-table td:first-child { color: var(--ink) !important; font-weight: 600; }
+body.legal-page .post-table tbody tr:hover td { background: rgba(139,124,255,.04); }
+body.legal-page .post-table caption { caption-side: bottom; padding-top: .9rem; font-size: .82rem; color: var(--ink-dim); text-align: left; }
+@media (max-width: 560px) {
+  body.legal-page .post-table { font-size: .88rem; }
+  body.legal-page .post-table th, body.legal-page .post-table td { padding: .7rem .45rem; }
+}
+
+/* Bloc de fin d'article */
+body.legal-page .post-cta {
+  margin-top: 3rem; padding: clamp(22px, 3.4vw, 34px); text-align: center;
+  border: 1px solid var(--line-heat); border-radius: 18px;
+  background: linear-gradient(180deg, rgba(30,26,60,.55), rgba(13,14,27,.45));
+}
+body.legal-page .post-cta h2 { border-top: none; padding-top: 0; margin-top: 0; }
+body.legal-page .post-sign { margin-top: 2.4rem; font-family: var(--f-mono); font-size: .78rem; letter-spacing: .08em; color: var(--ink-dim) !important; }
+
+/* Liens en plein texte : soulignés, pour rester distinguables sans la couleur (WCAG 1.4.1) */
+body.legal-page .container p a:not(.btn),
+body.legal-page .local-faq p a:not(.btn),
+body.legal-page .local-steps li a:not(.btn) {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+body.legal-page .container p a:not(.btn):hover { color: var(--heat-core); }

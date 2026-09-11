@@ -27,7 +27,7 @@ Prospection entrante via le site (Google, bouche-à-oreille). Le visiteur lit su
 - Services : création de sites web (vitrine, e-commerce, plateformes) ; applications mobiles iOS/Android ; IA (chatbots, assistants, automatisation) ; crypto/blockchain (tokens, smart contracts, dashboards Web3) ; bots Telegram/Discord/WhatsApp/Instagram ; solutions sur mesure.
 - Site statique hébergé sur **GitHub Pages** (contrainte : pas de backend serveur ; JS côté client uniquement ; formulaire via service externe). Domaine digitalconcept.be.
 - Site en FR uniquement aujourd'hui : les traductions EN/NL de `i18n.js` ne sont plus chargées par aucune page. Une version multilingue devra passer par des URL distinctes (`/en/`, `/nl/`) + `hreflang` — une bascule côté client sur la même URL n'est pas indexée.
-- Deux pages SEO (création-site-web-liège, application mobile). Les niches crypto/IA/bots ont été retirées : le cœur d'activité est le site web pour indépendants et artistes ; le Labo (6 pages, 5 outils 100 % statiques) est la preuve de savoir-faire du site — chaque outil affiche honnêtement ce qu'il fait et ne fait pas (pas d'IA générative, pas de vrai serveur de bot) ; la refonte concerne la page d'accueil (index.html) et l'identité visuelle.
+- Six pages SEO : quatre locales (Liège, Seraing, Huy, Namur) et une application mobile, plus un blog (`blog.html` + 3 articles de fond : prix du marché belge, WordPress vs sur mesure, référencement local). Le blog vise les recherches en amont, celles que le prospect fait avant même de chercher un prestataire. Les niches crypto/IA/bots ont été retirées : le cœur d'activité est le site web pour indépendants et artistes ; le Labo (6 pages, 5 outils 100 % statiques) est la preuve de savoir-faire du site — chaque outil affiche honnêtement ce qu'il fait et ne fait pas (pas d'IA générative, pas de vrai serveur de bot) ; la refonte concerne la page d'accueil (index.html) et l'identité visuelle.
 - Perf/SEO : Core Web Vitals, schema.org, sitemap déjà en place — à ne pas régresser.
 
 ## Brand Commitments
@@ -42,6 +42,8 @@ Prospection entrante via le site (Google, bouche-à-oreille). Le visiteur lit su
 
 Réalisations réelles (images dans /img, cyclées par le showcase) : Jayden (site artiste musique), Yuméa (Head Spa / bien-être), Toukin (kinésithérapie, Tolochenaz), Pizza Pino (restaurant italien, Nandrin), Oryxia (gravure laser), Betsfix (API paris sportifs), Cryptonauts (collection NFT sur Crypto.com). Pas de témoignages clients rédigés ni de logos clients sur le site actuel — ne pas en inventer. Le « 25 ans d'expérience » et « interlocuteur unique » sont des faits de marque assumés.
 
+**Tarifs affichés depuis septembre 2026** (arbitrage du client, contre la règle « aucun tarif » précédente) : landing à partir de 690 €, vitrine 1 400 – 2 800 €, boutique à partir de 2 900 €, suivi à partir de 25 €/mois avec trois mois compris. Ce sont des ordres de grandeur alignés sur le marché belge — à confirmer par Vincent avant toute campagne. Recensement exact des endroits où ils figurent : voir README.
+
 ## Product Principles
 
 1. Confiance avant tout : prouver l'expertise et la fiabilité, jamais survendre ; ton honnête.
@@ -49,6 +51,7 @@ Réalisations réelles (images dans /img, cyclées par le showcase) : Jayden (si
 3. Sur-mesure, zéro template : le site lui-même doit être la démonstration (l'anti-template).
 4. Largeur rare de compétences : du site vitrine au smart contract — réunies chez un seul artisan.
 5. Passage à l'action fluide : contact facile (formulaire / WhatsApp / tel), devis gratuit 24 h.
+6. Transparence du budget : des ordres de grandeur annoncés avant que le visiteur écrive, jamais une grille tarifaire figée. Le devis reste ferme, détaillé et individuel.
 
 ## Accessibility & Inclusion
 

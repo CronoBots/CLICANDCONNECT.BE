@@ -31,10 +31,11 @@ Toutes auto-hébergées (`fonts.css`, `fonts/*.woff2`).
 3. **Ce que je fais** (II) — index typographique `.field-list` de cinq prestations, filet violet et décalage au survol ; deux lignes renvoient aux pages SEO.
 4. **La méthode** (III) — quatre cartes `.route-step` reliées par un filet horizontal qui rappelle les arêtes du réseau de fond ; chacune porte son délai en mono.
 5. **Le budget** (IV) — trois vitrines de verre `.tier`, celle du milieu marquée « le plus demandé » (bordure chaude + `--bloom`) ; dessous, trois `.bnote` à filet gauche (après la mise en ligne, pourquoi pas moins cher, payer en plusieurs fois).
-6. **Questions** (V) — huit `<details>` `.qa-item`, accordéon natif sans JS, indicateur « + » qui pivote.
-7. **Le contact** (VI) — formulaire nom / e-mail / téléphone / message, envoi AJAX, repli e-mail ; à côté, téléphone, WhatsApp, adresse.
+6. **Les engagements** (V) — six cartes `.pledge` en grille 3×2, pastille ronde à coche, formulées pour être vérifiables plutôt que promises (domaine à votre nom, prix ferme, validation avant code, pas d'abonnement obligatoire, sortie libre, réponse sous 24 h).
+7. **Questions** (VI) — huit `<details>` `.qa-item`, accordéon natif sans JS, indicateur « + » qui pivote.
+8. **Le contact** (VII) — formulaire nom / e-mail / téléphone / message, envoi AJAX, repli e-mail ; à côté, téléphone, WhatsApp, adresse.
 
-Le moment signature reste entre les questions et le contact. La numérotation des folios court désormais de I à VI.
+Le moment signature reste entre les questions et le contact. La numérotation des folios court désormais de I à VII.
 
 Motion : réseau vivant (parallaxe souris, nœud illuminé sous le curseur, pause hors viewport), révélations « la chaleur qui monte », boutons magnétiques, signature qui se trace, fil de progression à gauche, halo au curseur. Tout se fige sous `prefers-reduced-motion`.
 

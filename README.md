@@ -8,7 +8,7 @@ seule personne : sites web pour indépendants et artistes, applications mobiles.
 
 | Fichier | Rôle |
 |---|---|
-| `index.html` | Accueil, monde obsidienne : qui (Vincent), le travail (carrousel), ce que je fais, la méthode, le budget, les questions, le contact. SEO + JSON-LD |
+| `index.html` | Accueil, monde obsidienne : qui (Vincent), le travail (carrousel), ce que je fais, la méthode, le budget, les engagements, les questions, le contact. SEO + JSON-LD |
 | `creation-site-web-liege.html` | Page SEO locale — Liège & Neupré |
 | `creation-site-web-seraing.html` | Page SEO locale — Seraing, Boncelles, Jemeppe, Ougrée |
 | `creation-site-web-huy.html` | Page SEO locale — Huy, Amay, Wanze, Condroz |

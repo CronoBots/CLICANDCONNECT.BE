@@ -696,3 +696,27 @@ a.field-row:hover .arrow { opacity: 1; transform: none; }
 @media (max-width: 520px) {
   .colophon-cols { grid-template-columns: 1fr; }
 }
+
+/* =====================================================================
+   LES ENGAGEMENTS — six points vérifiables
+   ===================================================================== */
+.pledges { border-top: 1px solid var(--line); }
+.pledge-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 2.2vw, 1.8rem); }
+.pledge {
+  position: relative; padding: clamp(1.4rem, 2.4vw, 1.9rem);
+  border: 1px solid var(--line); border-radius: 16px;
+  background: linear-gradient(180deg, rgba(26,27,48,.5), rgba(13,14,27,.4));
+  transition: border-color .35s var(--ease), transform .35s var(--ease);
+}
+.pledge:hover { border-color: var(--line-heat); transform: translateY(-3px); }
+.pledge-ic {
+  display: inline-grid; place-items: center; width: 34px; height: 34px; margin-bottom: .95rem;
+  color: var(--heat-core); background: rgba(139,124,255,.10);
+  border: 1px solid var(--line-heat); border-radius: 50%;
+}
+.pledge-ic svg { width: 17px; height: 17px; }
+.pledge h3 { font-size: clamp(1.05rem, .98rem + .45vw, 1.24rem); font-weight: 700; letter-spacing: -.015em; }
+.pledge p { margin-top: .6rem; color: var(--ink-soft); font-size: .94rem; }
+
+@media (max-width: 1000px) { .pledge-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px)  { .pledge-grid { grid-template-columns: 1fr; } }

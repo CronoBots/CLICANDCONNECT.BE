@@ -1,5 +1,5 @@
 /* =====================================================================
-   Digital Concept — home.js
+   Clic and Connect — home.js
    Monographie d'atelier. Autonome (FR). Aucune dépendance à script.js/i18n.js.
    ===================================================================== */
 (function () {
@@ -559,7 +559,7 @@
     window.addEventListener("pointermove", function (e) { tx = e.clientX; ty = e.clientY; if (!shown) { shown = true; g.style.opacity = "1"; } if (!raf) raf = requestAnimationFrame(run); }, { passive: true });
   })();
 
-  /* ---- Moment signature : les particules se reforment en « DC » ---- */
+  /* ---- Moment signature : les particules se reforment en « C&C » ---- */
   (function () {
     var section = document.getElementById("signature");
     if (!section) return;
@@ -574,8 +574,8 @@
       var ow = 900, oh = 520, off = document.createElement("canvas"); off.width = ow; off.height = oh;
       var o = off.getContext("2d");
       o.fillStyle = "#fff"; o.textAlign = "center"; o.textBaseline = "middle";
-      o.font = "800 " + Math.min(ow * 0.5, oh * 0.92) + 'px "Bricolage Grotesque", system-ui, sans-serif';
-      o.fillText("DC", ow / 2, oh / 2);
+      o.font = "800 " + Math.min(ow * 0.32, oh * 0.62) + 'px "Bricolage Grotesque", system-ui, sans-serif';
+      o.fillText("C&C", ow / 2, oh / 2);
       var img = o.getImageData(0, 0, ow, oh).data, pts = [], step = 6;
       for (var y = 0; y < oh; y += step) for (var x = 0; x < ow; x += step) { if (img[(y * ow + x) * 4 + 3] > 128) pts.push([x, y]); }
       var sc = Math.min(W / ow, H / oh) * 0.82, offx = (W - ow * sc) / 2, offy = (H - oh * sc) / 2;

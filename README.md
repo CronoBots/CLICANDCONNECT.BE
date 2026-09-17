@@ -1,6 +1,6 @@
-# Digital Concept
+# Clic and Connect
 
-Site de **Digital Concept** (digitalconcept.be) — Vincent Buron, développeur web
+Site de **Clic and Connect** (digitalconcept.be) — Vincent Buron, développeur web
 indépendant à Neupré près de Liège. Un site web qui vous ressemble, fait par une
 seule personne : sites web pour indépendants et artistes, applications mobiles.
 

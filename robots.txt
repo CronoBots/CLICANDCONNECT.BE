@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://digitalconcept.be/sitemap.xml
+Sitemap: https://clicandconnect.be/sitemap.xml

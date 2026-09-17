@@ -1,6 +1,6 @@
 # Clic and Connect
 
-Site de **Clic and Connect** (digitalconcept.be) — Vincent Buron, développeur web
+Site de **Clic and Connect** (clicandconnect.be) — Vincent Buron, développeur web
 indépendant à Neupré près de Liège. Un site web qui vous ressemble, fait par une
 seule personne : sites web pour indépendants et artistes, applications mobiles.
 
@@ -46,7 +46,7 @@ python3 -m http.server 8000
 ## Déploiement
 
 Hébergé sur **GitHub Pages** (workflow `.github/workflows/deploy-pages.yml`), avec
-le domaine personnalisé `digitalconcept.be` (fichier `CNAME`). Hébergeable tel quel
+le domaine personnalisé `clicandconnect.be` (fichier `CNAME`). Hébergeable tel quel
 sur n'importe quel hébergement statique (Netlify, Cloudflare Pages…).
 
 ## Formulaire de contact

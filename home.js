@@ -128,7 +128,7 @@
         + "\nTéléphone : " + ((typeEl && typeEl.value) || "—")
         + "\n\n" + ((msgEl && msgEl.value.trim()) || "");
       var a = document.createElement("a");
-      a.href = "mailto:" + to + "?subject=" + encodeURIComponent("Demande de devis — digitalconcept.be")
+      a.href = "mailto:" + to + "?subject=" + encodeURIComponent("Demande de devis — clicandconnect.be")
         + "&body=" + encodeURIComponent(body);
       a.className = "form-fallback";
       a.textContent = "Envoyer par e-mail";

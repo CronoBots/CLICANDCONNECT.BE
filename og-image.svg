@@ -22,7 +22,11 @@
   <!-- Logo C&amp;C -->
   <g transform="translate(90 96)">
     <rect width="92" height="92" rx="22" fill="#0b1730" stroke="#21385a" stroke-width="2"/>
-    <text x="46" y="62" font-family="'Space Grotesk',Arial,sans-serif" font-size="30" font-weight="700" text-anchor="middle" fill="#ffffff" letter-spacing="-1">C&amp;C</text>
+    <g transform="translate(46 46) scale(0.62) translate(-50 -50)" fill="none" stroke-width="7" stroke-linecap="round">
+      <path d="M42.08 35.82 A18 18 0 1 0 42.08 64.18" stroke="#F2EEE6"/>
+      <path d="M57.92 35.82 A18 18 0 1 1 57.92 64.18" stroke="url(#g)"/>
+    </g>
+    <circle cx="46" cy="46" r="2.8" fill="#C4B5FD"/>
     <circle cx="74" cy="20" r="6" fill="url(#g)"/>
   </g>
   <text x="208" y="158" font-family="'Space Grotesk',Arial,sans-serif" font-size="46" font-weight="700" fill="#eef3fb">Clic and <tspan fill="url(#g)">Connect</tspan></text>

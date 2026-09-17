@@ -4,6 +4,19 @@
 
 **Studio obsidienne — réseau vivant**, le monde du client. La structure en trois écrans du brief d'origine s'est élargie pour répondre aux trois questions que le visiteur se posait sans trouver de réponse — ce que je vends, comment ça se passe, combien ça coûte — sans changer ni le monde ni le rythme. Une scène obsidienne filmée dans le noir : une constellation de nœuds reliés en 3D (Canvas temps réel) qui respire et réagit au visiteur, l'accent indigo/violet, les vitrines de verre, le carrousel des réalisations, la signature « C&C » en particules. Aucune requête tierce. Tout respecte `prefers-reduced-motion`.
 
+## Logo
+
+Signe : deux « C » qui se font face, séparés par un nœud — le premier en encre claire (`--ink`), le second en dégradé violet (`--heat-core` → `--heat-2`), le point central en `--heat-core`. Il dit le clic (le point) et la connexion (les deux arcs qui se répondent), et reprend la grammaire du réseau de nœuds du fond d'accueil. Wordmark : `Clic and` en encre, `Connect` en violet, Bricolage Grotesque 700.
+
+| Fichier | Usage |
+|---|---|
+| `logo.svg` | Lockup horizontal, fond sombre — texte vectorisé, aucune dépendance de police |
+| `logo-mark.svg` | Le signe seul (avatar, tampon, réseaux) |
+| `logo-mono.svg` | Une seule couleur via `currentColor` — impression, facture, fax du comptable |
+| `favicon.svg` | Le signe dans la pastille obsidienne, lisible à 16 px |
+
+Dans les pages, le signe est inséré en SVG inline dans la pastille `.dc` du wordmark et hérite des tokens (`var(--ink)`, `var(--heat)`, `var(--heat-core)`).
+
 ## Palette
 
 | Rôle | Token | Valeur |

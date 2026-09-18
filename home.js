@@ -114,24 +114,26 @@
     } catch (e) {}
 
     function showError(msg) { message.className = "form-message error"; message.textContent = msg; }
-    // Repli : si l'envoi échoue, la demande n'est pas perdue — on propose un
-    // e-mail pré-rempli vers l'adresse de data-mailto.
+    // Repli : si l'envoi échoue, la demande n'est pas perdue — on propose
+    // WhatsApp, avec le message déjà rédigé. Aucune adresse e-mail n'est
+    // écrite dans la page : les robots à spam n'ont rien à y ramasser.
     function showFallback(msg) {
-      var to = (form.dataset.mailto || "").trim();
+      var wa = (form.dataset.whatsapp || "").trim();
       message.className = "form-message error";
       message.textContent = msg;
-      if (!to) return;
+      if (!wa) return;
       var typeEl = form.elements.namedItem("Téléphone");
       var msgEl = form.elements.namedItem("message");
-      var body = "Nom / entreprise : " + nameInput.value.trim()
+      var body = "Bonjour, ma demande depuis clicandconnect.be n'est pas partie."
+        + "\nNom / entreprise : " + nameInput.value.trim()
         + "\nE-mail : " + emailInput.value.trim()
         + "\nTéléphone : " + ((typeEl && typeEl.value) || "—")
         + "\n\n" + ((msgEl && msgEl.value.trim()) || "");
       var a = document.createElement("a");
-      a.href = "mailto:" + to + "?subject=" + encodeURIComponent("Demande de devis — clicandconnect.be")
-        + "&body=" + encodeURIComponent(body);
+      a.href = wa + "?text=" + encodeURIComponent(body);
+      a.target = "_blank"; a.rel = "noopener";
       a.className = "form-fallback";
-      a.textContent = "Envoyer par e-mail";
+      a.textContent = "Envoyer par WhatsApp";
       message.appendChild(document.createTextNode(" "));
       message.appendChild(a);
     }

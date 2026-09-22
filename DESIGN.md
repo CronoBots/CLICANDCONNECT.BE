@@ -6,16 +6,28 @@
 
 ## Logo
 
-Signe : deux « C » qui se font face, séparés par un nœud — le premier en encre claire (`--ink`), le second en dégradé violet (`--heat-core` → `--heat-2`), le point central en `--heat-core`. Il dit le clic (le point) et la connexion (les deux arcs qui se répondent), et reprend la grammaire du réseau de nœuds du fond d'accueil. Wordmark : `Clic and` en encre, `Connect` en violet, Bricolage Grotesque 700.
+Signe : un **éclat de clic** — pastille pleine, cinq rayons, curseur posé en bas
+à droite — en `--heat-core`. Il dit le geste que le visiteur vient de faire.
+Wordmark : `Click` en encre, l'esperluette en `--heat-core`, `Connect` en dégradé
+violet (`--heat-core` → `--heat-2`), Bricolage Grotesque 700 vectorisée. Le **o**
+de Connect est remplacé par un symbole de mise en marche, tracé aux métriques
+exactes du glyphe (anneau ouvert de 78°, épaisseur de fût). Le `i` de Click
+utilise le glyphe `dotlessi` de la fonte : l'éclat lui sert de point.
+
+Les trois fichiers de lockup sont engendrés par un même script à partir de la
+fonte, crénage HarfBuzz compris — aucune dépendance de police au rendu.
 
 | Fichier | Usage |
 |---|---|
-| `logo.svg` | Lockup horizontal, fond sombre — texte vectorisé, aucune dépendance de police |
-| `logo-mark.svg` | Le signe seul (avatar, tampon, réseaux) |
-| `logo-mono.svg` | Une seule couleur via `currentColor` — impression, facture, fax du comptable |
-| `favicon.svg` | Le signe dans la pastille obsidienne, lisible à 16 px |
+| `logo.svg` | Lockup horizontal, fond transparent — texte vectorisé |
+| `logo-on-dark.svg` · `logo-on-light.svg` | Le lockup sur aplat obsidienne et sur blanc |
+| `logo-mark.svg` | L'éclat seul (avatar, tampon, réseaux) |
+| `logo-mono.svg` | Une seule couleur via `currentColor` — impression, facture |
+| `favicon.svg` | L'éclat dans la pastille obsidienne, lisible à 32 px |
+| `og-image.svg` · `og-image.png` | Image de partage 1200×630, texte vectorisé |
 
-Dans les pages, le signe est inséré en SVG inline dans la pastille `.dc` du wordmark et hérite des tokens (`var(--ink)`, `var(--heat)`, `var(--heat-core)`).
+Dans les pages, le signe est inséré en SVG inline dans la pastille `.dc` du
+wordmark et hérite des tokens (`var(--ink)`, `var(--heat)`, `var(--heat-core)`).
 
 ## Palette
 

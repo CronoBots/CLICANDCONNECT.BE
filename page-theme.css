@@ -1,5 +1,5 @@
 /* =====================================================================
-   Clic and Connect — page-theme.css
+   Click and Connect — page-theme.css
    Surcharge « Studio obsidienne — réseau vivant » pour les pages SEO
    (chrome legal-page). Chargée APRÈS styles.css. Harmonise les pages
    catégories au monde de l'accueil (indigo/violet neural).
@@ -43,6 +43,7 @@ body.legal-page .legal-nav {
 }
 body.legal-page .legal-nav__brand { color: var(--ink) !important; font-family: var(--f-display); }
 body.legal-page .legal-nav__brand .lw, body.legal-page .lw { color: var(--heat) !important; }
+.lw-amp { color: var(--heat-core); }
 body.legal-page .legal-nav__back { color: var(--ink-soft) !important; transition: color .2s ease; }
 body.legal-page .legal-nav__back:hover { color: var(--heat) !important; }
 

@@ -1,12 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Clic and Connect">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#C4B5FD"/><stop offset="1" stop-color="#6366F1"/>
-    </linearGradient></defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="Click&amp;Connect">
   <rect width="100" height="100" rx="24" fill="#0B0B16"/>
   <rect x="9" y="9" width="82" height="82" rx="19" fill="none" stroke="#1E2336" stroke-width="2"/>
-  <g transform="translate(50 50) scale(0.78) translate(-50 -50)"><g fill="none" stroke-width="6.4" stroke-linecap="round">
-    <path d="M 42.08 35.82 A 18 18 0 1 0 42.08 64.18" stroke="#F2EEE6"/>
-    <path d="M 57.92 35.82 A 18 18 0 1 1 57.92 64.18" stroke="url(#g)"/>
-  </g>
-  <circle cx="50" cy="50" r="4.2" fill="#C4B5FD"/></g>
+  <g stroke="#C4B5FD" stroke-width="3.82" stroke-linecap="round"><line x1="48.09" y1="32.28" x2="48.09" y2="23.10"/><line x1="56.50" y1="35.59" x2="63.13" y2="28.96"/><line x1="59.82" y1="44.01" x2="69.00" y2="44.01"/><line x1="39.67" y1="35.59" x2="33.04" y2="28.96"/><line x1="36.36" y1="44.01" x2="27.18" y2="44.01"/></g><circle cx="48.09" cy="44.01" r="7.39" fill="#C4B5FD"/><polygon points="50.38,42.48 50.38,72.06 58.80,65.68 63.90,76.90 68.49,74.61 63.39,63.64 72.82,62.62" fill="#C4B5FD"/>
 </svg>

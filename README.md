@@ -1,6 +1,6 @@
-# Clic and Connect
+# Click and Connect
 
-Site de **Clic and Connect** (clicandconnect.be) — Vincent Buron, développeur web
+Site de **Click and Connect** (clicandconnect.be) — Vincent Buron, développeur web
 indépendant à Neupré près de Liège. Un site web qui vous ressemble, fait par une
 seule personne : sites web pour indépendants et artistes, applications mobiles.
 
@@ -21,7 +21,7 @@ seule personne : sites web pour indépendants et artistes, applications mobiles.
 | `fonts.css` + `fonts/*.woff2` | Bricolage Grotesque, Libre Franklin, Spline Sans Mono, auto-hébergées |
 | `cookies.js` | Bandeau et préférences cookies |
 | `img/*.webp` | Captures des réalisations et portrait |
-| `logo.svg` · `logo-mark.svg` · `logo-mono.svg` | Logo : lockup complet, signe seul, version monochrome (impression, facture) — texte vectorisé en Bricolage Grotesque 700 |
+| `logo.svg` · `logo-mark.svg` · `logo-mono.svg` | Logo : lockup complet, signe seul, version monochrome — texte vectorisé en Bricolage Grotesque 700 |
 | `favicon.svg` · `og-image.png` | Icône et image de partage |
 | `CNAME` · `robots.txt` · `sitemap.xml` | Domaine et référencement |
 

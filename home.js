@@ -1,5 +1,5 @@
 /* =====================================================================
-   Clic and Connect — home.js
+   Click and Connect — home.js
    Monographie d'atelier. Autonome (FR). Aucune dépendance à script.js/i18n.js.
    ===================================================================== */
 (function () {

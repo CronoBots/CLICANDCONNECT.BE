@@ -611,7 +611,7 @@ html.js:not(.no-intro) .intro {
 /* (Curseur personnalisé retiré — pas d'effet de suivi de curseur) */
 
 /* ===================================================================
-   Clic and Connect — sections agence (atouts, partenaire, méthode)
+   Click and Connect — sections agence (atouts, partenaire, méthode)
    =================================================================== */
 
 /* Logo agrandi dans l'intro */
@@ -1959,6 +1959,7 @@ body {
 .legal-nav__inner { max-width: var(--container); margin: 0 auto; padding: 15px clamp(18px, 4vw, 32px); display: flex; align-items: center; justify-content: space-between; }
 .legal-nav__brand { display: inline-flex; align-items: baseline; gap: 0.4rem; color: #fafafa; font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; }
 .legal-nav__brand .lw { color: #a1a1aa; font-weight: 500; }
+.lw-amp { color: var(--heat-core); }
 .legal-nav__back { color: rgba(250, 250, 250, 0.72); font-size: 0.9rem; transition: color 0.18s; }
 .legal-nav__back:hover { color: #fff; }
 

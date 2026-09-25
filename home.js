@@ -627,4 +627,89 @@
     var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(function () { if (ready) { initAll(); if (prefersReduced) draw(1); } }, 200); });
     document.addEventListener("visibilitychange", function () { if (document.hidden) run = false; else { run = true; loop(); } });
   })();
+
+  /* ------------------------------------------------------------ L'orbite des prestations
+     Six noeuds sur un anneau, panneau de detail a droite. Clavier : chaque noeud est un
+     <button>. La rotation automatique s'arrete au premier clic et ne demarre jamais sous
+     prefers-reduced-motion. */
+  (function () {
+    var nodesEl = $("#orbit-nodes"), linesEl = $("#orbit-lines"), panel = $("#orbit-panel");
+    if (!nodesEl || !linesEl || !panel) return;
+
+    var ico = function (d) {
+      return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" ' +
+             'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + d + "</svg>";
+    };
+    var SERVICES = [
+      { n: "Site vitrine sur mesure",
+        i: '<rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9h18"/><path d="M6.6 6.6h.01M9.2 6.6h.01"/>',
+        d: "Présenter votre activité, inspirer confiance et recevoir des appels. Dessiné pour vous, jamais posé sur un thème acheté. C'est le besoin de neuf clients sur dix.",
+        t: ["5 à 10 pages", "Référencement local", "Mobile d'abord", "Prise en main"],
+        u: "/creation-site-web-liege/", ul: "Voir la page Liège & Neupré" },
+      { n: "Boutique & réservation",
+        i: '<path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/>',
+        d: "Vendre vos produits ou laisser vos clients réserver un créneau seuls, même à 23 h. Paiement sécurisé, gestion simple, pensé mobile d'abord.",
+        t: ["Paiement sécurisé", "Créneaux", "Click & collect", "Stock"] },
+      { n: "Refonte d'un site existant",
+        i: '<path d="M4 12a8 8 0 0 1 13.7-5.7L20 8"/><path d="M20 4v4h-4"/><path d="M20 12a8 8 0 0 1-13.7 5.7L4 16"/><path d="M4 20v-4h4"/>',
+        d: "Votre site est lent, daté ou invisible sur Google ? On garde ce qui marche, on refait le reste. Vos contenus et votre référencement acquis sont préservés.",
+        t: ["Contenus repris", "SEO préservé", "Redirections", "Sans coupure"] },
+      { n: "Application mobile",
+        i: '<rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10.5 18.6h3"/>',
+        d: "De la maquette à la publication sur les stores, quand un site ne suffit plus et qu'il vous faut une vraie application.",
+        t: ["iOS & Android", "Maquette", "Publication", "Mises à jour"],
+        u: "/creation-application-mobile-belgique/", ul: "Voir la page application mobile" },
+      { n: "Référencement Google",
+        i: '<circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/><path d="M8 11h6M11 8v6"/>',
+        d: "Être trouvé quand quelqu'un cherche votre métier près de chez vous. Search Console, données structurées, contenus écrits pour votre région, et les chiffres qui disent ce que ça rapporte.",
+        t: ["Search Console", "Données structurées", "Contenus locaux", "Relevé mensuel"] },
+      { n: "Hébergement & évolutions",
+        i: '<rect x="3" y="4" width="18" height="6" rx="1.8"/><rect x="3" y="14" width="18" height="6" rx="1.8"/><path d="M7 7h.01M7 17h.01"/>',
+        d: "Une fois en ligne, un site vit. Je m'occupe de l'hébergement, des sauvegardes, de la sécurité et des changements que vous me demandez.",
+        t: ["Hébergement", "Sauvegardes", "Sécurité", "Modifications"],
+        u: "#budget", ul: "Voir le budget" }
+    ];
+
+    var actif = 0, boucle = null, touche = false, html = "", traits = "";
+    SERVICES.forEach(function (f, i) {
+      var a = (i * (360 / SERVICES.length) - 90) * Math.PI / 180, r = 42;
+      var x = 50 + r * Math.cos(a), y = 50 + r * Math.sin(a);
+      html += '<button type="button" class="node" data-i="' + i + '" style="left:' + x.toFixed(2) +
+              "%;top:" + y.toFixed(2) + '%" aria-pressed="false" aria-label="' + f.n + '">' +
+              '<span class="ic">' + ico(f.i) + '</span><span class="lb" aria-hidden="true">' + f.n + "</span></button>";
+      traits += '<line x1="50" y1="50" x2="' + x.toFixed(2) + '" y2="' + y.toFixed(2) + '"/>';
+    });
+    nodesEl.innerHTML = html; linesEl.innerHTML = traits;
+
+    function montre(i, net) {
+      actif = i;
+      $$(".node", nodesEl).forEach(function (n, k) {
+        n.classList.toggle("on", k === i); n.setAttribute("aria-pressed", k === i ? "true" : "false");
+      });
+      $$("line", linesEl).forEach(function (l, k) { l.classList.toggle("on", k === i); });
+      var f = SERVICES[i];
+      var h = '<span class="o-panel-n">0' + (i + 1) + " / 0" + SERVICES.length + "</span><h3>" + f.n + "</h3><p>" + f.d + "</p>" +
+              "<ul>" + f.t.map(function (t) { return "<li>" + t + "</li>"; }).join("") + "</ul>" +
+              '<p class="o-panel-link">' + (f.u ? '<a href="' + f.u + '">' + f.ul + " →</a>" : "Sur devis, après un échange") + "</p>";
+      if (net || prefersReduced) { panel.innerHTML = h; return; }
+      panel.classList.add("swap");
+      setTimeout(function () { panel.innerHTML = h; panel.classList.remove("swap"); }, 220);
+    }
+
+    nodesEl.addEventListener("click", function (e) {
+      var n = e.target.closest(".node"); if (!n) return;
+      touche = true; clearInterval(boucle); montre(Number(n.getAttribute("data-i")));
+    });
+    montre(0, true);
+
+    if (!prefersReduced && "IntersectionObserver" in window) {
+      new IntersectionObserver(function (en) {
+        en.forEach(function (x) {
+          clearInterval(boucle);
+          if (x.isIntersecting && !touche) boucle = setInterval(function () { montre((actif + 1) % SERVICES.length); }, 4200);
+        });
+      }, { threshold: .35 }).observe($("#orbit"));
+    }
+  })();
+
 })();

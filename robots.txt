@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://clicandconnect.be/sitemap.xml
+Sitemap: https://uploaded.be/sitemap.xml

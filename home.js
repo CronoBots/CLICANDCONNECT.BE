@@ -124,7 +124,7 @@
       if (!wa) return;
       var typeEl = form.elements.namedItem("Téléphone");
       var msgEl = form.elements.namedItem("message");
-      var body = "Bonjour, ma demande depuis clicandconnect.be n'est pas partie."
+      var body = "Bonjour, ma demande depuis uploaded.be n'est pas partie."
         + "\nNom / entreprise : " + nameInput.value.trim()
         + "\nE-mail : " + emailInput.value.trim()
         + "\nTéléphone : " + ((typeEl && typeEl.value) || "—")

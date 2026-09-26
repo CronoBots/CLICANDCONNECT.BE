@@ -2,32 +2,32 @@
 
 ## Direction
 
-**Studio obsidienne — réseau vivant**, le monde du client. La structure en trois écrans du brief d'origine s'est élargie pour répondre aux trois questions que le visiteur se posait sans trouver de réponse — ce que je vends, comment ça se passe, combien ça coûte — sans changer ni le monde ni le rythme. Une scène obsidienne filmée dans le noir : une constellation de nœuds reliés en 3D (Canvas temps réel) qui respire et réagit au visiteur, l'accent indigo/violet, les vitrines de verre, le carrousel des réalisations, la signature « C&C » en particules. Aucune requête tierce. Tout respecte `prefers-reduced-motion`.
+**Studio obsidienne — réseau vivant**, le monde du client. La structure en trois écrans du brief d'origine s'est élargie pour répondre aux trois questions que le visiteur se posait sans trouver de réponse — ce que je vends, comment ça se passe, combien ça coûte — sans changer ni le monde ni le rythme. Une scène obsidienne filmée dans le noir : une constellation de nœuds reliés en 3D (Canvas temps réel) qui respire et réagit au visiteur, l'accent indigo/violet, les vitrines de verre, le carrousel des réalisations, la signature en particules — la flèche du logo. Aucune requête tierce. Tout respecte `prefers-reduced-motion`.
 
 ## Logo
 
-Signe : un **éclat de clic** — pastille pleine, cinq rayons, curseur posé en bas
-à droite — en `--heat-core`. Il dit le geste que le visiteur vient de faire.
-Wordmark : `Click` en encre, l'esperluette en `--heat-core`, `Connect` en dégradé
-violet (`--heat-core` → `--heat-2`), Bricolage Grotesque 700 vectorisée. Le **o**
-de Connect est remplacé par un symbole de mise en marche, tracé aux métriques
-exactes du glyphe (anneau ouvert de 78°, épaisseur de fût). Le `i` de Click
-utilise le glyphe `dotlessi` de la fonte : l'éclat lui sert de point.
+Signe : la **flèche de téléversement** — hampe, chevron, barre au sol — en
+dégradé violet (`--heat-core` → `--heat-2`). Elle dit le mot, sans détour, et
+reste lisible à 16 px. Wordmark : `Upload` en encre, `ed` en dégradé violet,
+Bricolage Grotesque 700 vectorisée. La coupure n'est pas décorative : le
+participe passé *est* la marque — l'état, une fois que c'est en ligne.
 
-Les trois fichiers de lockup sont engendrés par un même script à partir de la
-fonte, crénage HarfBuzz compris — aucune dépendance de police au rendu.
+Le dégradé de la flèche est en `userSpaceOnUse` et non en `objectBoundingBox` :
+un trait strictement vertical ou horizontal a une boîte englobante dégénérée, et
+la spécification SVG interdit alors le rendu. La hampe et la barre
+disparaîtraient.
 
 | Fichier | Usage |
 |---|---|
 | `logo.svg` | Lockup horizontal, fond transparent — texte vectorisé |
 | `logo-on-dark.svg` · `logo-on-light.svg` | Le lockup sur aplat obsidienne et sur blanc |
-| `logo-mark.svg` | L'éclat seul (avatar, tampon, réseaux) |
+| `logo-mark.svg` | La flèche seule (avatar, tampon, réseaux) |
 | `logo-mono.svg` | Une seule couleur via `currentColor` — impression, facture |
-| `favicon.svg` | L'éclat dans la pastille obsidienne, lisible à 32 px |
+| `favicon.svg` | La flèche dans la pastille obsidienne |
 | `og-image.svg` · `og-image.png` | Image de partage 1200×630, texte vectorisé |
 
-Dans les pages, le signe est inséré en SVG inline dans la pastille `.dc` du
-wordmark et hérite des tokens (`var(--ink)`, `var(--heat)`, `var(--heat-core)`).
+Dans les pages, le wordmark s'écrit `Upload` + `ed`, la terminaison portant la
+classe `.w-mark` sur l'accueil et `.lw` sur les pages secondaires.
 
 ## Palette
 
@@ -52,7 +52,7 @@ Toutes auto-hébergées (`fonts.css`, `fonts/*.woff2`).
 ## Accueil (`index.html` + `home.css` + `home.js`)
 
 1. **Qui** — scène obsidienne plein écran, réseau de nœuds 3D derrière le titre *Un site web qui vous ressemble, fait par une seule personne.*, portrait à droite (vignette au-dessus du titre sur mobile), deux pastilles (Sites web, Applications), bouton magnétique + téléphone, faits 25 / 1 / 24 h.
-2. **Le travail** — carrousel « vitrine » (maquette ordinateur + téléphone, rotation auto, parallaxe) avec Jayden, Pizzeria Pino, Yuméa, Toukin ; sous le carrousel, trois vitrines de verre (sur mesure, un seul interlocuteur, et après). Puis le moment signature : les particules se reforment en « C&C ».
+2. **Le travail** — carrousel « vitrine » (maquette ordinateur + téléphone, rotation auto, parallaxe) avec Jayden, Pizzeria Pino, Yuméa, Toukin ; sous le carrousel, trois vitrines de verre (sur mesure, un seul interlocuteur, et après). Puis le moment signature : les particules se reforment en la flèche du logo.
 3. **Ce que je fais** (II) — **l'orbite** : six nœuds sur un anneau autour d'un cœur « Vincent · un seul interlocuteur », et un panneau de détail qui change au clic. Chaque nœud est un `<button>` (clavier, `aria-pressed`), le panneau est en `aria-live`. Rotation automatique de 4,2 s tant que le visiteur n'a rien touché, arrêtée dès le premier clic et jamais lancée sous `prefers-reduced-motion`. Deux nœuds portent un lien vers les pages SEO, un troisième vers le budget. Composant porté depuis le dépôt SECR3TLY et retokenisé sur l'obsidienne.
 4. **La méthode** (III) — quatre cartes `.route-step` reliées par un filet horizontal qui rappelle les arêtes du réseau de fond ; chacune porte son délai en mono.
 5. **Le budget** (IV) — trois vitrines de verre `.tier`, celle du milieu marquée « le plus demandé » (bordure chaude + `--bloom`) ; dessous, trois `.bnote` à filet gauche (après la mise en ligne, pourquoi pas moins cher, payer en plusieurs fois).

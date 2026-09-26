@@ -1,5 +1,5 @@
 /* =====================================================================
-   Click and Connect — home.css
+   Uploaded — home.css
    « Atelier en fusion » — scène obsidienne cinématographique, métal en
    fusion WebGL, chaleur de forge bronze→ambre. Autonome (FR).
    Seed 02e1f084 · mode persuade · monde épinglé par le client.
@@ -561,7 +561,7 @@ a.field-row:hover .arrow { opacity: 1; transform: none; }
   #champ .spread-head { position: sticky; top: 110px; margin-bottom: 0; }
 }
 
-/* Moment signature — particules qui se reforment en « C&C » (épinglé) */
+/* Moment signature — particules qui se reforment en la flèche (épinglé) */
 .signature { position: relative; height: 210vh; }
 .signature-inner { position: sticky; top: 0; height: 100svh; overflow: hidden; display: grid; place-items: center; }
 .sig-net { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; }

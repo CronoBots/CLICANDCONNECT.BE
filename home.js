@@ -1,5 +1,5 @@
 /* =====================================================================
-   Click and Connect — home.js
+   Uploaded — home.js
    Monographie d'atelier. Autonome (FR). Aucune dépendance à script.js/i18n.js.
    ===================================================================== */
 (function () {
@@ -561,7 +561,7 @@
     window.addEventListener("pointermove", function (e) { tx = e.clientX; ty = e.clientY; if (!shown) { shown = true; g.style.opacity = "1"; } if (!raf) raf = requestAnimationFrame(run); }, { passive: true });
   })();
 
-  /* ---- Moment signature : les particules se reforment en « C&C » ---- */
+  /* ---- Moment signature : les particules se reforment en la fleche ---- */
   (function () {
     var section = document.getElementById("signature");
     if (!section) return;
@@ -576,8 +576,13 @@
       var ow = 900, oh = 520, off = document.createElement("canvas"); off.width = ow; off.height = oh;
       var o = off.getContext("2d");
       o.fillStyle = "#fff"; o.textAlign = "center"; o.textBaseline = "middle";
-      o.font = "800 " + Math.min(ow * 0.32, oh * 0.62) + 'px "Bricolage Grotesque", system-ui, sans-serif';
-      o.fillText("C&C", ow / 2, oh / 2);
+      /* On dessine le signe plutot que le mot : « Uploaded » fait huit lettres et passerait
+         derriere la phrase centrale. La fleche, elle, tient au centre comme l'ancien monogramme. */
+      var k = Math.min(ow / 19.6, oh / 21.6) * 0.78, cx = ow / 2, cy = oh / 2;
+      o.strokeStyle = "#fff"; o.lineWidth = 4.6 * k; o.lineCap = "round"; o.lineJoin = "round";
+      o.beginPath(); o.moveTo(cx, cy + 7 * k); o.lineTo(cx, cy - 9.6 * k); o.stroke();
+      o.beginPath(); o.moveTo(cx - 7.4 * k, cy - 2.6 * k); o.lineTo(cx, cy - 10.2 * k); o.lineTo(cx + 7.4 * k, cy - 2.6 * k); o.stroke();
+      o.beginPath(); o.moveTo(cx - 9.8 * k, cy + 11.4 * k); o.lineTo(cx + 9.8 * k, cy + 11.4 * k); o.stroke();
       var img = o.getImageData(0, 0, ow, oh).data, pts = [], step = 6;
       for (var y = 0; y < oh; y += step) for (var x = 0; x < ow; x += step) { if (img[(y * ow + x) * 4 + 3] > 128) pts.push([x, y]); }
       var sc = Math.min(W / ow, H / oh) * 0.82, offx = (W - ow * sc) / 2, offy = (H - oh * sc) / 2;

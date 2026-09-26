@@ -12,7 +12,7 @@ Dirigeants de TPE/PME, indépendants, artisans, commerçants et porteurs de proj
 
 ## Product Purpose
 
-Click and Connect est le studio digital solo de **Vincent Buron** (Neupré, Belgique). Il conçoit et développe sur mesure : sites web, applications mobiles, solutions d'IA/automatisation, projets crypto/blockchain et bots réseaux sociaux. Le site sert à générer des prises de contact qualifiées (devis) en donnant confiance et en prouvant l'expertise. Succès = le visiteur a envie de découvrir le travail et d'entamer un projet.
+Uploaded est le studio digital solo de **Vincent Buron** (Neupré, Belgique). Il conçoit et développe sur mesure : sites web, applications mobiles, solutions d'IA/automatisation, projets crypto/blockchain et bots réseaux sociaux. Le site sert à générer des prises de contact qualifiées (devis) en donnant confiance et en prouvant l'expertise. Succès = le visiteur a envie de découvrir le travail et d'entamer un projet.
 
 ## Positioning
 
@@ -32,7 +32,7 @@ Prospection entrante via le site (Google, bouche-à-oreille). Le visiteur lit su
 
 ## Brand Commitments
 
-- Nom : **Click and Connect** (logo texte « Click and » + « Connect », monogramme « C&C »). Fondateur signant : Vincent Buron.
+- Nom : **Uploaded** (logotype « Upload » en encre + « ed » en violet, signe : la flèche de téléversement). Fondateur signant : Vincent Buron.
 - Signature de pied de page à conserver (« Conçu & développé … »).
 - Voix : directe, honnête, sans jargon, chaleureuse mais experte ; parle à la première personne (« je »). Vouvoiement du client.
 - Coordonnées réelles : Rue Chapéchêne 10, 4120 Neupré, Belgique · 0460 96 21 46.

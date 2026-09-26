@@ -52,8 +52,7 @@ sur n'importe quel hébergement statique (Netlify, Cloudflare Pages…).
 ## Formulaire de contact
 
 Le formulaire de l'accueil poste en AJAX vers **FormSubmit** (`data-endpoint` du
-`<form id="contact-form">`), sans quitter la page. Un repli `data-mailto` ouvre la
-messagerie du visiteur si l'envoi échoue. Le champ « Type de projet » est transmis
+`<form id="contact-form">`), sans quitter la page. Si l'envoi échoue, un repli propose WhatsApp avec le message déjà rédigé : aucune adresse e-mail n'est écrite sur l'accueil, pour ne rien donner aux robots à spam. L'adresse `contact@uploaded.be` figure dans les pages légales, où le Code de droit économique l'impose, et dans les données structurées. Le champ « Type de projet » est transmis
 avec le message pour qualifier la demande d'emblée.
 
 ## Tarifs affichés

@@ -38,138 +38,272 @@
   <link rel="stylesheet" href="home.css?v=20260911" />
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": ["ProfessionalService", "Organization"],
-        "@id": "https://uploaded.be/#organization",
-        "name": "Uploaded",
-        "alternateName": "Uploaded — Vincent Buron",
-        "url": "https://uploaded.be/",
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "ProfessionalService",
+        "Organization"
+      ],
+      "@id": "https://uploaded.be/#organization",
+      "name": "Uploaded",
+      "alternateName": "Uploaded — Vincent Buron",
+      "url": "https://uploaded.be/",
+      "telephone": "+32460962146",
+      "logo": "https://uploaded.be/favicon.svg",
+      "image": "https://uploaded.be/og-image.png",
+      "description": "Studio digital solo en Belgique : sites web, applications mobiles, intelligence artificielle, crypto/blockchain et bots réseaux sociaux — conçus et développés sur mesure par Vincent Buron, plus de 25 ans d'expérience.",
+      "slogan": "Un site web qui vous ressemble, fait par une seule personne.",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": 1
+      },
+      "currenciesAccepted": "EUR",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rue Chapéchêne 10",
+        "postalCode": "4120",
+        "addressLocality": "Neupré",
+        "addressRegion": "Liège",
+        "addressCountry": "BE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.51,
+        "longitude": 5.51
+      },
+      "hasMap": "https://www.google.com/maps?cid=16935510628113497470",
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Belgique"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Wallonie"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Province de Liège"
+        },
+        {
+          "@type": "City",
+          "name": "Liège"
+        },
+        {
+          "@type": "City",
+          "name": "Neupré"
+        }
+      ],
+      "founder": {
+        "@id": "https://uploaded.be/#vincent"
+      },
+      "knowsAbout": [
+        "Création de sites web",
+        "Sites vitrines",
+        "Sites e-commerce",
+        "Refonte de site web",
+        "Développement d'applications mobiles",
+        "Référencement local",
+        "Référencement naturel (SEO)",
+        "Google Search Console",
+        "Données structurées schema.org",
+        "Core Web Vitals"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
         "telephone": "+32460962146",
-        "logo": "https://uploaded.be/favicon.svg",
-        "image": "https://uploaded.be/og-image.png",
-        "description": "Studio digital solo en Belgique : sites web, applications mobiles, intelligence artificielle, crypto/blockchain et bots réseaux sociaux — conçus et développés sur mesure par Vincent Buron, plus de 25 ans d'expérience.",
-        "slogan": "Un site web qui vous ressemble, fait par une seule personne.",
-        "numberOfEmployees": { "@type": "QuantitativeValue", "value": 1 },
-        "currenciesAccepted": "EUR",
-        "priceRange": "€€",
-        "address": { "@type": "PostalAddress", "streetAddress": "Rue Chapéchêne 10", "postalCode": "4120", "addressLocality": "Neupré", "addressRegion": "Liège", "addressCountry": "BE" },
-        "geo": { "@type": "GeoCoordinates", "latitude": 50.51, "longitude": 5.51 },
-        "hasMap": "https://www.google.com/maps?cid=16935510628113497470",
-        "areaServed": [
-          { "@type": "Country", "name": "Belgique" },
-          { "@type": "AdministrativeArea", "name": "Wallonie" },
-          { "@type": "AdministrativeArea", "name": "Province de Liège" },
-          { "@type": "City", "name": "Liège" },
-          { "@type": "City", "name": "Neupré" }
-        ],
-        "founder": { "@id": "https://uploaded.be/#vincent" },
-        "knowsAbout": ["Création de sites web", "Sites vitrines", "Sites e-commerce", "Refonte de site web", "Développement d'applications mobiles", "Référencement local", "Référencement naturel (SEO)", "Google Search Console", "Données structurées schema.org", "Core Web Vitals"],
-        "contactPoint": { "@type": "ContactPoint", "telephone": "+32460962146", "contactType": "customer support", "areaServed": "BE", "availableLanguage": ["fr"] }
-      },
-      {
-        "@type": "Person",
-        "@id": "https://uploaded.be/#vincent",
-        "name": "Vincent Buron",
-        "jobTitle": "Développeur web indépendant, fondateur de Uploaded",
-        "image": "https://uploaded.be/img/vincent.webp",
-        "worksFor": { "@id": "https://uploaded.be/#organization" },
-        "description": "Développeur indépendant à Neupré, près de Liège. Plus de 25 ans d'expérience : sites web, applications mobiles, intelligence artificielle, blockchain et bots, conçus et codés sur mesure."
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://uploaded.be/#website",
-        "url": "https://uploaded.be/",
-        "name": "Uploaded",
-        "inLanguage": "fr-BE",
-        "publisher": { "@id": "https://uploaded.be/#organization" }
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://uploaded.be/#webpage",
-        "url": "https://uploaded.be/",
-        "name": "Uploaded — Création de sites web à Liège, par Vincent Buron",
-        "description": "Je suis Vincent, développeur indépendant près de Liège, 25 ans de métier. Je conçois et code vos sites web, applications, IA, crypto et bots. Devis sous 24 h.",
-        "inLanguage": "fr-BE",
-        "isPartOf": { "@id": "https://uploaded.be/#website" },
-        "about": { "@id": "https://uploaded.be/#organization" },
-        "datePublished": "2026-06-14",
-        "dateModified": "2026-09-11"
-      },
-      {
-        "@type": "OfferCatalog",
-        "@id": "https://uploaded.be/#offres",
-        "name": "Création de sites web — ordres de grandeur",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "name": "Site d'une page (landing)",
-            "description": "Une page longue pensée pour faire agir, formulaire de contact, nom de domaine et mise en ligne compris.",
-            "priceSpecification": { "@type": "PriceSpecification", "minPrice": 690, "priceCurrency": "EUR" },
-            "availability": "https://schema.org/InStock",
-            "itemOffered": { "@type": "Service", "name": "Création de site web d'une page", "serviceType": "Création de site web", "provider": { "@id": "https://uploaded.be/#organization" } }
-          },
-          {
-            "@type": "Offer",
-            "name": "Site vitrine sur mesure",
-            "description": "5 à 10 pages dessinées sur mesure, référencement local, contenus modifiables par le client, prise en main comprise.",
-            "priceSpecification": { "@type": "PriceSpecification", "minPrice": 1400, "maxPrice": 2800, "priceCurrency": "EUR" },
-            "availability": "https://schema.org/InStock",
-            "itemOffered": { "@type": "Service", "name": "Création de site vitrine sur mesure", "serviceType": "Création de site web", "provider": { "@id": "https://uploaded.be/#organization" } }
-          },
-          {
-            "@type": "Offer",
-            "name": "Boutique ou réservation en ligne",
-            "description": "Paiement en ligne sécurisé, agenda de réservation ou catalogue produits, gestion des commandes et des stocks.",
-            "priceSpecification": { "@type": "PriceSpecification", "minPrice": 2900, "priceCurrency": "EUR" },
-            "availability": "https://schema.org/InStock",
-            "itemOffered": { "@type": "Service", "name": "Création de site e-commerce ou de réservation", "serviceType": "Création de site e-commerce", "provider": { "@id": "https://uploaded.be/#organization" } }
-          },
-          {
-            "@type": "Offer",
-            "name": "Hébergement, maintenance et évolutions",
-            "description": "Hébergement, sauvegardes, mises à jour de sécurité et petites évolutions. Les trois premiers mois sont compris avec chaque site.",
-            "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": 25, "priceCurrency": "EUR", "unitText": "MONTH", "billingIncrement": 1 },
-            "availability": "https://schema.org/InStock",
-            "itemOffered": { "@type": "Service", "name": "Maintenance de site web", "serviceType": "Maintenance de site web", "provider": { "@id": "https://uploaded.be/#organization" } }
-          },
-          {
-            "@type": "Offer",
-            "name": "Référencement & visibilité sur Google",
-            "description": "Search Console, données structurées schema.org, performances techniques et contenus écrits pour votre région, avec un relevé des résultats. Sur devis, seul ou en complément d'un site.",
-            "availability": "https://schema.org/InStock",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Référencement naturel et optimisation technique pour Google",
-              "serviceType": "Référencement naturel (SEO)",
-              "provider": {
-                "@id": "https://uploaded.be/#organization"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://uploaded.be/#faq",
-        "isPartOf": { "@id": "https://uploaded.be/#webpage" },
-        "inLanguage": "fr-BE",
-        "mainEntity": [
-          { "@type": "Question", "name": "Je n'y connais rien en informatique. C'est un problème ?", "acceptedAnswer": { "@type": "Answer", "text": "Au contraire, c'est le cas de la plupart de mes clients. Vous êtes l'expert de votre métier, je suis l'expert du mien. Vous n'aurez jamais à comprendre un terme technique : je vous explique chaque décision en français, et je m'occupe de tout ce qui est technique — domaine, hébergement, e-mails, sécurité." } },
-          { "@type": "Question", "name": "En combien de temps mon site sera-t-il en ligne ?", "acceptedAnswer": { "@type": "Answer", "text": "Comptez une à deux semaines pour un site vitrine, quelques semaines pour une boutique ou un projet sur mesure. Le délai figure dans le devis et je m'y tiens. Ce qui allonge le plus les projets, ce n'est presque jamais le code : ce sont les textes et les photos. Si vous les avez déjà, on va vite." } },
-          { "@type": "Question", "name": "Est-ce que je pourrai modifier mon site moi-même ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Vos textes, vos photos, vos tarifs, vos horaires : tout ce qui change souvent reste dans vos mains, depuis une interface simple. Je vous montre comment faire en fin de projet. Et si vous préférez me confier une modification, un message suffit." } },
-          { "@type": "Question", "name": "Mon site sera-t-il trouvé sur Google ?", "acceptedAnswer": { "@type": "Answer", "text": "Chaque site part avec des bases solides : pages rapides, structure propre, contenus écrits pour vos vrais clients, données structurées et fiche Google Business soignée. Soyons honnêtes sur la suite : personne ne peut garantir une première place, et méfiez-vous de qui vous la promet. Ce que je garantis, c'est un site techniquement irréprochable, sur lequel le référencement peut réellement se construire." } },
-          { "@type": "Question", "name": "Pourquoi vous plutôt qu'une agence ?", "acceptedAnswer": { "@type": "Answer", "text": "Dans une agence, le commercial qui vous séduit n'est pas celui qui dessine, et celui qui dessine n'est pas celui qui code. Chaque passage de main coûte du temps, de l'argent et un peu de votre intention d'origine. Ici, les trois personnes sont la même, avec 25 ans de métier. Vous décidez plus vite, et vous savez toujours à qui parler." } },
-          { "@type": "Question", "name": "Pourquoi pas Wix, Squarespace ou un thème WordPress ?", "acceptedAnswer": { "@type": "Answer", "text": "Ce sont de bons outils, et pour certains projets je vous le dirai franchement. Leurs limites arrivent plus tard : des pages plus lourdes, un abonnement à vie, et surtout une apparence que des milliers de sites partagent déjà. Un site sur mesure coûte plus cher au départ et vous appartient vraiment." } },
-          { "@type": "Question", "name": "Travaillez-vous en dehors de la région de Liège ?", "acceptedAnswer": { "@type": "Answer", "text": "Je suis à Neupré, entre Liège et Huy, et j'aime rencontrer mes clients quand c'est possible. Mais je travaille dans toute la Belgique et à distance : visio, téléphone, e-mail. Une bonne partie de mes projets se sont faits sans que l'on se voie une seule fois." } },
-          { "@type": "Question", "name": "Et si le résultat ne me plaît pas ?", "acceptedAnswer": { "@type": "Answer", "text": "C'est justement pour ça que vous validez les maquettes avant que je code, et que vous suivez le site prendre forme sur une adresse privée. Les surprises de fin de projet viennent des projets où le client ne voit rien avant la livraison. Ici, vous voyez tout, tout le temps, et on corrige au fur et à mesure." } }
+        "contactType": "customer support",
+        "areaServed": "BE",
+        "availableLanguage": [
+          "fr"
         ]
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "Person",
+      "@id": "https://uploaded.be/#vincent",
+      "name": "Vincent Buron",
+      "jobTitle": "Développeur web indépendant, fondateur de Uploaded",
+      "image": "https://uploaded.be/img/vincent.webp",
+      "worksFor": {
+        "@id": "https://uploaded.be/#organization"
+      },
+      "description": "Développeur indépendant à Neupré, près de Liège. Plus de 25 ans d'expérience : sites web, applications mobiles, intelligence artificielle, blockchain et bots, conçus et codés sur mesure."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://uploaded.be/#website",
+      "url": "https://uploaded.be/",
+      "name": "Uploaded",
+      "inLanguage": "fr-BE",
+      "publisher": {
+        "@id": "https://uploaded.be/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://uploaded.be/#webpage",
+      "url": "https://uploaded.be/",
+      "name": "Uploaded — Création de sites web à Liège, par Vincent Buron",
+      "description": "Je suis Vincent, développeur indépendant près de Liège, 25 ans de métier. Je conçois et code vos sites web, applications, IA, crypto et bots. Devis sous 24 h.",
+      "inLanguage": "fr-BE",
+      "isPartOf": {
+        "@id": "https://uploaded.be/#website"
+      },
+      "about": {
+        "@id": "https://uploaded.be/#organization"
+      },
+      "datePublished": "2026-06-14",
+      "dateModified": "2026-09-11"
+    },
+    {
+      "@type": "OfferCatalog",
+      "@id": "https://uploaded.be/#offres",
+      "name": "Création de sites web — ordres de grandeur",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "Site d'une page (landing)",
+          "description": "Une page longue pensée pour faire agir, formulaire de contact, nom de domaine et mise en ligne compris.",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 690,
+            "priceCurrency": "EUR"
+          },
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Création de site web d'une page",
+            "serviceType": "Création de site web",
+            "provider": {
+              "@id": "https://uploaded.be/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Site vitrine sur mesure",
+          "description": "5 à 10 pages dessinées sur mesure, référencement local, contenus modifiables par le client, prise en main comprise.",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 1400,
+            "maxPrice": 2800,
+            "priceCurrency": "EUR"
+          },
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Création de site vitrine sur mesure",
+            "serviceType": "Création de site web",
+            "provider": {
+              "@id": "https://uploaded.be/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Boutique ou réservation en ligne",
+          "description": "Paiement en ligne sécurisé, agenda de réservation ou catalogue produits, gestion des commandes et des stocks.",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 2900,
+            "priceCurrency": "EUR"
+          },
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Création de site e-commerce ou de réservation",
+            "serviceType": "Création de site e-commerce",
+            "provider": {
+              "@id": "https://uploaded.be/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Hébergement, maintenance et évolutions",
+          "description": "Hébergement, sauvegardes, mises à jour de sécurité et petites évolutions. Les trois premiers mois sont compris avec chaque site.",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "minPrice": 25,
+            "priceCurrency": "EUR",
+            "unitText": "MONTH",
+            "billingIncrement": 1
+          },
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Maintenance de site web",
+            "serviceType": "Maintenance de site web",
+            "provider": {
+              "@id": "https://uploaded.be/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Référencement & visibilité sur Google",
+          "description": "Search Console, données structurées schema.org, performances techniques et contenus écrits pour votre région, avec un relevé des résultats. Sur devis, seul ou en complément d'un site.",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Référencement naturel et optimisation technique pour Google",
+            "serviceType": "Référencement naturel (SEO)",
+            "provider": {
+              "@id": "https://uploaded.be/#organization"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://uploaded.be/#faq",
+      "isPartOf": {
+        "@id": "https://uploaded.be/#webpage"
+      },
+      "inLanguage": "fr-BE",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Je n'y connais rien en informatique. C'est un problème ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Au contraire, c'est le cas de la plupart de mes clients. Vous êtes l'expert de votre métier, je suis l'expert du mien. Vous n'aurez jamais à comprendre un terme technique : je vous explique chaque décision en français, et je m'occupe de tout ce qui est technique — domaine, hébergement, e-mails, sécurité."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "En combien de temps mon site sera-t-il en ligne ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Comptez une à deux semaines pour un site vitrine, quelques semaines pour une boutique ou un projet sur mesure. Le délai figure dans le devis et je m'y tiens. Ce qui allonge le plus les projets, ce n'est presque jamais le code : ce sont les textes et les photos. Si vous les avez déjà, on va vite."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Est-ce que je pourrai modifier mon site moi-même ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Vos textes, vos photos, vos tarifs, vos horaires : tout ce qui change souvent reste dans vos mains, depuis une interface simple. Je vous montre comment faire en fin de projet. Et si vous préférez me confier une modification, un message suffit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mon site sera-t-il trouvé sur Google ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Chaque site part avec des bases solides : pages rapides, structure propre, contenus écrits pour vos vrais clients, données structurées et fiche Google Business soignée. Soyons honnêtes sur la suite : personne ne peut garantir une première place, et méfiez-vous de qui vous la promet. Ce que je garantis, c'est un site techniquement irréprochable, sur lequel le référencement peut réellement se construire."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <!--
@@ -182,10 +316,6 @@
   FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 -->
   <a href="#works" class="skip-link">Aller au contenu</a>
-
-  <canvas id="net-bg" aria-hidden="true"></canvas>
-  <div class="cursor-glow" aria-hidden="true"></div>
-  <div class="spine" aria-hidden="true"><span class="spine-track"></span><span class="spine-fill"></span><span class="spine-node"></span></div>
 
   <header class="masthead" id="masthead">
     <div class="wrap">
@@ -240,7 +370,7 @@
               <li><a href="/creation-application-mobile-belgique/">Applications mobiles</a></li>
             </ul>
             <div class="cover-actions reveal d3">
-              <a href="#commande" class="btn btn--mark" data-magnetic>Me parler de votre projet <span class="btn-ar" aria-hidden="true">→</span></a>
+              <a href="#commande" class="btn btn--mark">Me parler de votre projet <span class="btn-ar" aria-hidden="true">→</span></a>
               <a href="tel:+32460962146" class="cover-phone">Ou appelez&nbsp;: <b>0460&nbsp;96&nbsp;21&nbsp;46</b></a>
             </div>
             <div class="cover-foot reveal d4">
@@ -472,27 +602,6 @@
             <h3>Vous validez avant que je code</h3>
             <p>Les maquettes d'abord, puis le site en construction sur une adresse privée que vous consultez quand vous voulez. Vous ne découvrez rien à la livraison.</p>
           </li>
-          <li class="pledge reveal">
-            <span class="pledge-ic" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-            </span>
-            <h3>Aucun abonnement obligatoire</h3>
-            <p>Le suivi mensuel est utile, ce n'est pas une condition. Votre site fonctionne sans lui, et vous pouvez le prendre, l'arrêter, puis le reprendre.</p>
-          </li>
-          <li class="pledge reveal d1">
-            <span class="pledge-ic" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-            </span>
-            <h3>Vous partez avec tout</h3>
-            <p>Le code, les contenus, le domaine, les accès. Sans négociation, sans frais de sortie et sans que j'aie à donner mon accord. Un autre développeur peut reprendre le travail tel quel.</p>
-          </li>
-          <li class="pledge reveal d2">
-            <span class="pledge-ic" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-            </span>
-            <h3>Je réponds sous 24&nbsp;h ouvrées</h3>
-            <p>Pendant le projet comme deux ans après. Et c'est moi qui réponds&nbsp;: il n'y a personne d'autre à qui vous pourriez être renvoyé.</p>
-          </li>
         </ul>
 
         <p class="budget-foot reveal">Un engagement qui ne se vérifie pas n'en est pas un. Si l'un de ces six points compte pour vous, demandez-moi de l'écrire dans le devis&nbsp;: il y est déjà.</p>
@@ -524,36 +633,11 @@
             <summary><span class="qi">04</span> Mon site sera-t-il trouvé sur Google&nbsp;?<span class="plus" aria-hidden="true"></span></summary>
             <div class="qa-body"><p>Chaque site part avec des bases solides&nbsp;: pages rapides, structure propre, contenus écrits pour vos vrais clients, données structurées et fiche Google Business soignée. Soyons honnêtes sur la suite&nbsp;: personne ne peut garantir une première place, et méfiez-vous de qui vous la promet. Ce que je garantis, c'est un site techniquement irréprochable, sur lequel le référencement peut réellement se construire.</p></div>
           </details>
-          <details class="qa-item reveal">
-            <summary><span class="qi">05</span> Pourquoi vous plutôt qu'une agence&nbsp;?<span class="plus" aria-hidden="true"></span></summary>
-            <div class="qa-body"><p>Dans une agence, le commercial qui vous séduit n'est pas celui qui dessine, et celui qui dessine n'est pas celui qui code. Chaque passage de main coûte du temps, de l'argent et un peu de votre intention d'origine. Ici, les trois personnes sont la même, avec 25 ans de métier. Vous décidez plus vite, et vous savez toujours à qui parler.</p></div>
-          </details>
-          <details class="qa-item reveal">
-            <summary><span class="qi">06</span> Pourquoi pas Wix, Squarespace ou un thème WordPress&nbsp;?<span class="plus" aria-hidden="true"></span></summary>
-            <div class="qa-body"><p>Ce sont de bons outils, et pour certains projets je vous le dirai franchement. Leurs limites arrivent plus tard&nbsp;: des pages plus lourdes, un abonnement à vie, et surtout une apparence que des milliers de sites partagent déjà. Un site sur mesure coûte plus cher au départ et vous appartient vraiment. <a href="/blog/wordpress-ou-site-sur-mesure/">J'ai écrit un article complet là-dessus</a>.</p></div>
-          </details>
-          <details class="qa-item reveal">
-            <summary><span class="qi">07</span> Travaillez-vous en dehors de la région de Liège&nbsp;?<span class="plus" aria-hidden="true"></span></summary>
-            <div class="qa-body"><p>Je suis à Neupré, entre Liège et Huy, et j'aime rencontrer mes clients quand c'est possible. Mais je travaille dans toute la Belgique et à distance&nbsp;: visio, téléphone, e-mail. Une bonne partie de mes projets se sont faits sans que l'on se voie une seule fois.</p></div>
-          </details>
-          <details class="qa-item reveal">
-            <summary><span class="qi">08</span> Et si le résultat ne me plaît pas&nbsp;?<span class="plus" aria-hidden="true"></span></summary>
-            <div class="qa-body"><p>C'est justement pour ça que vous validez les maquettes avant que je code, et que vous suivez le site prendre forme sur une adresse privée. Les surprises de fin de projet viennent des projets où le client ne voit rien avant la livraison. Ici, vous voyez tout, tout le temps, et on corrige au fur et à mesure.</p></div>
-          </details>
         </div>
       </div>
     </section>
 
-    <!-- ===== SIGNATURE (moment épinglé : les particules se reforment en la flèche du logo) ===== -->
-    <section class="signature" id="signature" aria-label="La signature Uploaded">
-      <div class="signature-inner">
-        <canvas class="sig-net" data-signet aria-hidden="true"></canvas>
-        <div class="signature-copy">
-          <p class="folio">La signature</p>
-          <h2 class="h-sect">De l'idée au code,<br />une seule main.</h2>
-        </div>
-      </div>
-    </section>
+    
 
     <!-- ===== COMMANDE (contact) ===== -->
     <section class="commission plate spread" id="commande">
@@ -583,7 +667,7 @@
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_captcha" value="false" />
             <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" />
-            <button type="submit" class="btn btn--mark" id="contact-submit" data-magnetic>Envoyer ma demande <span class="btn-ar" aria-hidden="true">→</span></button>
+            <button type="submit" class="btn btn--mark" id="contact-submit">Envoyer ma demande <span class="btn-ar" aria-hidden="true">→</span></button>
           </form>
           <p class="form-rgpd">En soumettant ce formulaire, vous acceptez d'être recontacté par Uploaded. Vos données restent confidentielles et ne sont jamais partagées.</p>
           <div class="form-check" id="form-check" aria-hidden="true">
